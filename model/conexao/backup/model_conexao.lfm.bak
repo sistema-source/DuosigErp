@@ -1,0 +1,36 @@
+object ModelConexao: TModelConexao
+  OnCreate = DataModuleCreate
+  OldCreateOrder = False
+  Height = 272
+  HorizontalOffset = 914
+  VerticalOffset = 237
+  Width = 393
+  object ibConexao: TIBConnection
+    Connected = False
+    LoginPrompt = False
+    DatabaseName = 'd:\duosig\dados\duosig_ccj.erp'
+    KeepConnection = False
+    Password = 'masterkey'
+    Transaction = SQLTrans
+    UserName = 'SYSDBA'
+    CharSet = 'WIN1252'
+    HostName = '127.0.0.1'
+    CheckTransactionParams = False
+    UseConnectionCharSetIfNone = False
+    Left = 40
+    Top = 16
+  end
+  object SQLTrans: TSQLTransaction
+    Active = False
+    Database = ibConexao
+    Left = 144
+    Top = 16
+  end
+  object Conexao: TZConnection
+    ControlsCodePage = cCP_UTF8
+    AutoEncodeStrings = True
+    Port = 0
+    Left = 48
+    Top = 104
+  end
+end

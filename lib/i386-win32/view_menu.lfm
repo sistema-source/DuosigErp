@@ -1,0 +1,36 @@
+object Form1: TForm1
+  Left = 326
+  Height = 705
+  Top = 164
+  Width = 1241
+  BorderWidth = 2
+  Caption = 'Form1'
+  ClientHeight = 705
+  ClientWidth = 1241
+  Position = poDesktopCenter
+  LCLVersion = '2.2.6.0'
+  object Button1: TButton
+    Left = 152
+    Height = 25
+    Top = 48
+    Width = 75
+    Action = MnuMigracao
+    TabOrder = 0
+  end
+  object Button2: TButton
+    Left = 32
+    Height = 25
+    Top = 168
+    Width = 75
+    Caption = 'Button2'
+    TabOrder = 1
+  end
+  object ActionList1: TActionList
+    Left = 56
+    Top = 32
+    object MnuMigracao: TAction
+      Caption = 'MnuMigracao'
+      OnExecute = MnuMigracaoExecute
+    end
+  end
+end
