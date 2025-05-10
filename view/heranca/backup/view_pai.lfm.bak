@@ -1,0 +1,25 @@
+object ViewPai: TViewPai
+  Left = 679
+  Height = 316
+  Top = 291
+  Width = 593
+  Caption = 'ViewPai'
+  ClientHeight = 316
+  ClientWidth = 593
+  Color = clWhite
+  Font.CharSet = ANSI_CHARSET
+  Font.Height = -13
+  Font.Pitch = fpVariable
+  Font.Quality = fqDraft
+  LCLVersion = '2.2.6.0'
+  object LblTitulo: TLabel
+    Left = 5
+    Height = 17
+    Top = 0
+    Width = 588
+    Align = alTop
+    BorderSpacing.Left = 5
+    Caption = 'LblTitulo'
+    ParentColor = False
+  end
+end

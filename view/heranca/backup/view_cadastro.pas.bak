@@ -1,0 +1,62 @@
+unit view_cadastro;
+
+{$mode ObjFPC}{$H+}
+
+interface
+
+uses
+  Classes, SysUtils, Forms, Controls, Graphics, Dialogs, ExtCtrls, StdCtrls, Buttons, DBGrids, BCButton, view_pai;
+
+type
+
+  { TViewCadastro }
+
+  TOpCadPes = (opPes, opCad);
+
+  TViewCadastro = class(TViewPai)
+    BtnApagar: TSpeedButton;
+    BtnVoltar: TSpeedButton;
+    BtnNovo: TSpeedButton;
+    BtnSalvar: TSpeedButton;
+    DBGrid1: TDBGrid;
+    EdtPesquisar: TEdit;
+    Label1: TLabel;
+    NbCadastro: TNotebook;
+    PgCadastro: TPage;
+    PgPesquisa: TPage;
+    Panel1: TPanel;
+    BtnPesquisar: TSpeedButton;
+    PnlBotoesPesquisa: TPanel;
+    PnlBotoesCadastro: TPanel;
+    ScrBxDesktop: TScrollBox;
+    procedure BtnNovoClick(Sender: TObject);
+  private
+
+  protected
+    procedure ConfigurarBotao(pBotao : TBCButton);
+
+  public
+
+  end;
+
+var
+  ViewCadastro: TViewCadastro;
+
+implementation
+
+{$R *.lfm}
+
+{ TViewCadastro }
+
+procedure TViewCadastro.BtnNovoClick(Sender: TObject);
+begin
+  NbCadastro.PageIndex := Ord(opCad);
+end;
+
+procedure TViewCadastro.ConfigurarBotao(pBotao: TBCButton);
+begin
+  NbCadastro.PageIndex := Ord(opPes);
+end;
+
+end.
+

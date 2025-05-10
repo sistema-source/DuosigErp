@@ -1,0 +1,7 @@
+inherited ViewCadUsuario: TViewCadUsuario
+  Left = 408
+  Top = 318
+  inherited NbCadastro: TNotebook
+    PageIndex = 1
+  end
+end

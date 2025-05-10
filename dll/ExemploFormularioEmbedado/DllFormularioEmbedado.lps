@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <PathDelim Value="\"/>
+    <Version Value="12"/>
+    <BuildModes Active="Default"/>
+    <Units>
+      <Unit>
+        <Filename Value="DllFormularioEmbedado.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <IsVisibleTab Value="True"/>
+        <TopLine Value="7"/>
+        <CursorPos Y="3"/>
+        <UsageCount Value="21"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="view_dll_exemplo.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FormDll"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="1"/>
+        <CursorPos X="20" Y="3"/>
+        <UsageCount Value="21"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="C:\lazarus\lcl\forms.pp"/>
+        <UnitName Value="Forms"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="685"/>
+        <CursorPos X="38" Y="705"/>
+        <UsageCount Value="10"/>
+      </Unit>
+      <Unit>
+        <Filename Value="C:\lazarus\lcl\controls.pp"/>
+        <UnitName Value="Controls"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="164"/>
+        <CursorPos X="3" Y="183"/>
+        <UsageCount Value="10"/>
+      </Unit>
+    </Units>
+    <JumpHistory HistoryIndex="29">
+      <Position>
+        <Filename Value="DllFormularioEmbedado.lpr"/>
+        <Caret Column="30"/>
+      </Position>
+      <Position>
+        <Filename Value="DllFormularioEmbedado.lpr"/>
+        <Caret Line="6" Column="40"/>
+      </Position>
+      <Position>
+        <Filename Value="DllFormularioEmbedado.lpr"/>
+        <Caret Line="11" Column="23"/>
+      </Position>
+      <Position>
+        <Filename Value="DllFormularioEmbedado.lpr"/>
+        <Caret Line="24"/>
+      </Position>
+      <Position>
+        <Filename Value="DllFormularioEmbedado.lpr"/>
+        <Caret Line="18" Column="11"/>
+      </Position>
+      <Position>
+        <Filename Value="DllFormularioEmbedado.lpr"/>
+        <Caret Line="14" Column="20"/>
+      </Position>
+      <Position>
+        <Filename Value="DllFormularioEmbedado.lpr"/>
+        <Caret Line="15" Column="35"/>
+      </Position>
+      <Position>
+        <Filename Value="DllFormularioEmbedado.lpr"/>
+        <Caret Line="14" Column="26"/>
+      </Position>
+      <Position>
+        <Filename Value="DllFormularioEmbedado.lpr"/>
+        <Caret Line="4" Column="24"/>
+      </Position>
+      <Position>
+        <Filename Value="DllFormularioEmbedado.lpr"/>
+        <Caret Line="19" Column="39"/>
+      </Position>
+      <Position>
+        <Filename Value="DllFormularioEmbedado.lpr"/>
+        <Caret Line="23" Column="36"/>
+      </Position>
+      <Position>
+        <Filename Value="DllFormularioEmbedado.lpr"/>
+        <Caret Line="15" Column="39"/>
+      </Position>
+      <Position>
+        <Filename Value="DllFormularioEmbedado.lpr"/>
+        <Caret Line="16" Column="43"/>
+      </Position>
+      <Position>
+        <Filename Value="DllFormularioEmbedado.lpr"/>
+        <Caret Line="12" Column="37"/>
+      </Position>
+      <Position>
+        <Filename Value="DllFormularioEmbedado.lpr"/>
+        <Caret Line="16" Column="11"/>
+      </Position>
+      <Position>
+        <Filename Value="DllFormularioEmbedado.lpr"/>
+        <Caret Line="4" Column="29"/>
+      </Position>
+      <Position>
+        <Filename Value="DllFormularioEmbedado.lpr"/>
+        <Caret Line="17" Column="21"/>
+      </Position>
+      <Position>
+        <Filename Value="DllFormularioEmbedado.lpr"/>
+        <Caret Line="24" Column="57"/>
+      </Position>
+      <Position>
+        <Filename Value="view_dll_exemplo.pas"/>
+        <Caret Line="19" Column="46"/>
+      </Position>
+      <Position>
+        <Filename Value="view_dll_exemplo.pas"/>
+        <Caret Line="24" Column="7"/>
+      </Position>
+      <Position>
+        <Filename Value="view_dll_exemplo.pas"/>
+        <Caret Line="22" Column="33"/>
+      </Position>
+      <Position>
+        <Filename Value="view_dll_exemplo.pas"/>
+        <Caret Line="21" Column="33"/>
+      </Position>
+      <Position>
+        <Filename Value="view_dll_exemplo.pas"/>
+        <Caret Line="22" Column="33"/>
+      </Position>
+      <Position>
+        <Filename Value="view_dll_exemplo.pas"/>
+        <Caret Line="39" Column="27"/>
+      </Position>
+      <Position>
+        <Filename Value="view_dll_exemplo.pas"/>
+        <Caret Line="29" Column="30" TopLine="13"/>
+      </Position>
+      <Position>
+        <Filename Value="view_dll_exemplo.pas"/>
+        <Caret Line="28" Column="30" TopLine="13"/>
+      </Position>
+      <Position>
+        <Filename Value="view_dll_exemplo.pas"/>
+        <Caret Line="27" Column="30" TopLine="12"/>
+      </Position>
+      <Position>
+        <Filename Value="DllFormularioEmbedado.lpr"/>
+        <Caret Line="42" Column="22" TopLine="5"/>
+      </Position>
+      <Position>
+        <Filename Value="DllFormularioEmbedado.lpr"/>
+        <Caret Line="15" Column="24" TopLine="2"/>
+      </Position>
+      <Position>
+        <Filename Value="DllFormularioEmbedado.lpr"/>
+        <Caret Line="18" Column="24"/>
+      </Position>
+    </JumpHistory>
+    <RunParams>
+      <FormatVersion Value="2"/>
+      <Modes ActiveMode=""/>
+    </RunParams>
+  </ProjectSession>
+</CONFIG>

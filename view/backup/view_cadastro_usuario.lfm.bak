@@ -1,0 +1,4 @@
+inherited ViewCadastro1: TViewCadastro1
+  Left = 408
+  Top = 318
+end

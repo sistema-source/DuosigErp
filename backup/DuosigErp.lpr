@@ -10,7 +10,7 @@ uses
   athreads,
   {$ENDIF}
   Interfaces, // this includes the LCL widgetset
-  Forms, zcomponent, view_menu, model_conexao, configuracao_ini_file, model_migracao
+  Forms, zcomponent, view_menu, uhelper, model_conexao, configuracao_ini_file, model_migracao
   { you can add units after this };
 
 {$R *.res}
@@ -20,7 +20,7 @@ begin
   Application.Scaled:=True;
   Application.Initialize;
   Application.CreateForm(TModelConexao, ModelConexao);
-  Application.CreateForm(TForm1, Form1);
+  Application.CreateForm(TViewMenu, ViewMenu);
   Application.CreateForm(TModelMigracao, ModelMigracao);
   Application.Run;
 end.

@@ -1,0 +1,5 @@
+inherited ViewCadUsuario: TViewCadUsuario
+  Left = 408
+  Top = 318
+  OnShow = nil
+end

@@ -1,0 +1,29 @@
+unit view_cadastro_usuario;
+
+{$mode ObjFPC}{$H+}
+
+interface
+
+uses
+  Classes, SysUtils, Forms, Controls, Graphics, Dialogs, Buttons, view_cadastro;
+
+type
+
+  { TViewCadastroUsuario }
+
+  TViewCadastroUsuario = class(TViewCadastro)
+  private
+
+  public
+
+  end;
+
+var
+  ViewCadastroUsuario: TViewCadastroUsuario;
+
+implementation
+
+{$R *.lfm}
+
+end.
+

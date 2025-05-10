@@ -43,13 +43,15 @@
       <Unit>
         <Filename Value="view\view_menu.pas"/>
         <IsPartOfProject Value="True"/>
-        <ComponentName Value="Form1"/>
+        <ComponentName Value="ViewMenu"/>
+        <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
       </Unit>
       <Unit>
         <Filename Value="model\conexao\model_conexao.pas"/>
         <IsPartOfProject Value="True"/>
         <ComponentName Value="ModelConexao"/>
+        <HasResources Value="True"/>
         <ResourceBaseClass Value="DataModule"/>
       </Unit>
       <Unit>
@@ -60,7 +62,12 @@
         <Filename Value="model\conexao\model_migracao.pas"/>
         <IsPartOfProject Value="True"/>
         <ComponentName Value="ModelMigracao"/>
+        <HasResources Value="True"/>
         <ResourceBaseClass Value="DataModule"/>
+      </Unit>
+      <Unit>
+        <Filename Value="utilitarios\uhelper.pas"/>
+        <IsPartOfProject Value="True"/>
       </Unit>
     </Units>
   </ProjectOptions>
@@ -72,13 +79,13 @@
     </Target>
     <SearchPaths>
       <IncludeFiles Value="$(ProjOutDir)"/>
-      <OtherUnitFiles Value="view;model\conexao"/>
+      <OtherUnitFiles Value="view;model\conexao;utilitarios"/>
       <UnitOutputDirectory Value="lib\$(TargetCPU)-$(TargetOS)"/>
     </SearchPaths>
     <Linking>
       <Debugging>
+        <GenerateDebugInfo Value="False"/>
         <DebugInfoType Value="dsDwarf2Set"/>
-        <UseHeaptrc Value="True"/>
       </Debugging>
       <Options>
         <Win32>
