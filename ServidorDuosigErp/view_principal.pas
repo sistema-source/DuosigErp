@@ -5,7 +5,10 @@ unit view_principal;
 interface
 
 uses
-  Classes, SysUtils, Forms, Controls, Graphics, Dialogs, Buttons, StdCtrls, horse;
+  Classes, SysUtils, Forms, Controls, Graphics, Dialogs, Buttons, StdCtrls, horse, Horse.Jhonson,
+  fpjson, jsonparser,
+  rotas_usuario,
+  rotas_testes;
 
 type
 
@@ -33,11 +36,24 @@ var
 
 implementation
 
-procedure DoPing(Req: THorseRequest; Res: THorseResponse);
+procedure DoPing(Req: THorseRequest; Res: THorseResponse; Next: TNextProc);
 begin
-  Res.Send('pong '+DateTimeToStr(now));
+  Res.Send('pong ' + DateTimeToStr(now));
 end;
 
+procedure DoPingJson(Req: THorseRequest; Res: THorseResponse; Next: TNextProc);
+var
+  LBody: TJSONObject;
+  Arrayj : TJsonArray;
+begin
+  Arrayj := TJsonArray.Create;
+  LBody := TJSONObject.Create;
+  LBody.Add('none', 'Tone Cezar da');
+  LBody.Add('sobrenome', 'Costa');
+  ArrayJ.Add(LBody);
+  //Res.Send<TJSONObject>(LBody).status(200);
+  Res.Send<TJSONArray>(ArrayJ).status(200);
+end;
 
 {$R *.lfm}
 
@@ -57,7 +73,13 @@ end;
 
 procedure TForm1.FormCreate(Sender: TObject);
 begin
-    THorse.Get('/ping', DoPing);
+
+  THorse.Use(Jhonson);
+  rotas_usuario.Registry;
+    rotas_testes.Registry;
+
+  THorse.Get('/ping', DoPing);
+  THorse.Get('/ping/json', DoPingJson);
 end;
 
 procedure TForm1.Status;
@@ -65,7 +87,6 @@ begin
   BtnParar.Enabled := THorse.IsRunning;
   BtnIniciar.Enabled := not THorse.IsRunning;
   edtPorta.Enabled := not THorse.IsRunning;
-
 end;
 
 procedure TForm1.Start;

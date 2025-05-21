@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <PathDelim Value="\"/>
+    <Version Value="12"/>
+    <BuildModes Active="Default"/>
+    <Units>
+      <Unit>
+        <Filename Value="TestarDll.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="-1"/>
+        <WindowIndex Value="-1"/>
+        <TopLine Value="-1"/>
+        <CursorPos X="-1" Y="-1"/>
+        <UsageCount Value="20"/>
+      </Unit>
+      <Unit>
+        <Filename Value="view\view_testar_dll.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="ViewTestarDll"/>
+        <ResourceBaseClass Value="Form"/>
+        <IsVisibleTab Value="True"/>
+        <CursorPos X="14" Y="3"/>
+        <UsageCount Value="20"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit>
+    </Units>
+    <JumpHistory HistoryIndex="4">
+      <Position>
+        <Filename Value="view\view_testar_dll.pas"/>
+        <Caret Line="24" Column="57"/>
+      </Position>
+      <Position>
+        <Filename Value="view\view_testar_dll.pas"/>
+        <Caret Line="10"/>
+      </Position>
+      <Position>
+        <Filename Value="view\view_testar_dll.pas"/>
+        <Caret Line="23" Column="41"/>
+      </Position>
+      <Position>
+        <Filename Value="view\view_testar_dll.pas"/>
+        <Caret Line="28" Column="41"/>
+      </Position>
+      <Position>
+        <Filename Value="view\view_testar_dll.pas"/>
+        <Caret Line="66" Column="66" TopLine="31"/>
+      </Position>
+    </JumpHistory>
+    <RunParams>
+      <FormatVersion Value="2"/>
+      <Modes ActiveMode=""/>
+    </RunParams>
+  </ProjectSession>
+</CONFIG>

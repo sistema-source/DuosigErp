@@ -1,0 +1,20 @@
+object ModelConexaoFirebird: TModelConexaoFirebird
+  OnCreate = DataModuleCreate
+  OldCreateOrder = False
+  Height = 150
+  HorizontalOffset = 677
+  VerticalOffset = 348
+  Width = 547
+  object Conexao: TZConnection
+    ControlsCodePage = cCP_UTF8
+    AutoEncodeStrings = True
+    ClientCodepage = 'WIN1252'
+    Properties.Strings = (
+      'codepage=WIN1252'
+    )
+    Port = 0
+    Protocol = 'firebird'
+    Left = 56
+    Top = 16
+  end
+end

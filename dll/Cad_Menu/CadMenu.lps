@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <PathDelim Value="\"/>
+    <Version Value="12"/>
+    <BuildModes Active="Default"/>
+    <Units>
+      <Unit>
+        <Filename Value="CadMenu.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <IsVisibleTab Value="True"/>
+        <CursorPos X="28" Y="8"/>
+        <UsageCount Value="25"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\..\view\heranca\view_pai.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="ViewPai"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="4"/>
+        <CursorPos X="36" Y="14"/>
+        <UsageCount Value="25"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\..\view\heranca\view_cadastro.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="ViewCadastro"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="12"/>
+        <TopLine Value="39"/>
+        <CursorPos X="52" Y="46"/>
+        <UsageCount Value="25"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\..\view\view_cad_menu.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="ViewCadMenu"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="3"/>
+        <TopLine Value="66"/>
+        <CursorPos X="44" Y="85"/>
+        <UsageCount Value="25"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\..\Biblioteca\teclas_funcao.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="11"/>
+        <TopLine Value="7"/>
+        <CursorPos X="18" Y="56"/>
+        <UsageCount Value="25"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\..\model\Heranca\model_pai.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="ModelPai"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="DataModule"/>
+        <EditorIndex Value="10"/>
+        <TopLine Value="23"/>
+        <CursorPos X="23" Y="46"/>
+        <UsageCount Value="25"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\..\model\Api\model_api.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="9"/>
+        <TopLine Value="10"/>
+        <CursorPos X="41" Y="30"/>
+        <UsageCount Value="25"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\..\model\model_menu.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="ModelMenu"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="DataModule"/>
+        <EditorIndex Value="13"/>
+        <CursorPos X="10" Y="25"/>
+        <UsageCount Value="24"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="C:\lazarus\lcl\comctrls.pp"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="ComCtrls"/>
+        <EditorIndex Value="8"/>
+        <TopLine Value="3105"/>
+        <CursorPos X="14" Y="3123"/>
+        <UsageCount Value="23"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\..\vo\vo_menu.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="5"/>
+        <CursorPos X="60" Y="8"/>
+        <UsageCount Value="23"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="C:\lazarus\lcl\lclproc.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="LCLProc"/>
+        <EditorIndex Value="6"/>
+        <TopLine Value="2"/>
+        <CursorPos X="12" Y="22"/>
+        <UsageCount Value="23"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="C:\lazarus\lcl\include\lcl_defines.inc"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="7"/>
+        <CursorPos X="87" Y="10"/>
+        <UsageCount Value="23"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="C:\lazarus\lcl\imglist.pp"/>
+        <UnitName Value="ImgList"/>
+        <EditorIndex Value="2"/>
+        <TopLine Value="441"/>
+        <CursorPos X="14" Y="475"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="C:\lazarus\lcl\interfaces\win32\interfaces.pp"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="Interfaces"/>
+        <EditorIndex Value="1"/>
+        <CursorPos X="87" Y="17"/>
+        <UsageCount Value="21"/>
+        <Loaded Value="True"/>
+      </Unit>
+    </Units>
+    <JumpHistory HistoryIndex="29">
+      <Position>
+        <Filename Value="..\..\view\view_cad_menu.pas"/>
+        <Caret Line="47" Column="41" TopLine="11"/>
+      </Position>
+      <Position>
+        <Filename Value="..\..\view\view_cad_menu.pas"/>
+        <Caret Line="31" Column="78"/>
+      </Position>
+      <Position>
+        <Filename Value="..\..\view\view_cad_menu.pas"/>
+        <Caret Line="59" Column="65" TopLine="29"/>
+      </Position>
+      <Position>
+        <Filename Value="..\..\model\model_menu.pas"/>
+        <Caret Line="18" Column="32"/>
+      </Position>
+      <Position>
+        <Filename Value="..\..\view\view_cad_menu.pas"/>
+        <Caret Line="64" Column="22" TopLine="29"/>
+      </Position>
+      <Position>
+        <Filename Value="..\..\model\model_menu.pas"/>
+        <Caret Line="19" Column="23"/>
+      </Position>
+      <Position>
+        <Filename Value="..\..\view\view_cad_menu.pas"/>
+        <Caret Line="71" Column="19" TopLine="32"/>
+      </Position>
+      <Position>
+        <Filename Value="C:\lazarus\lcl\comctrls.pp"/>
+        <Caret Line="3123" Column="14" TopLine="3105"/>
+      </Position>
+      <Position>
+        <Filename Value="..\..\view\view_cad_menu.pas"/>
+        <Caret Line="72" Column="20" TopLine="38"/>
+      </Position>
+      <Position>
+        <Filename Value="..\..\view\view_cad_menu.pas"/>
+        <Caret Line="67" TopLine="26"/>
+      </Position>
+      <Position>
+        <Filename Value="..\..\view\view_cad_menu.pas"/>
+        <Caret Line="29" Column="52"/>
+      </Position>
+      <Position>
+        <Filename Value="..\..\view\view_cad_menu.pas"/>
+        <Caret Line="73" TopLine="53"/>
+      </Position>
+      <Position>
+        <Filename Value="..\..\view\view_cad_menu.pas"/>
+      </Position>
+      <Position>
+        <Filename Value="..\..\view\view_cad_menu.pas"/>
+        <Caret Line="17" Column="24"/>
+      </Position>
+      <Position>
+        <Filename Value="..\..\view\view_cad_menu.pas"/>
+        <Caret Line="51" Column="3" TopLine="48"/>
+      </Position>
+      <Position>
+        <Filename Value="..\..\view\view_cad_menu.pas"/>
+      </Position>
+      <Position>
+        <Filename Value="..\..\view\view_cad_menu.pas"/>
+        <Caret Line="18" Column="24"/>
+      </Position>
+      <Position>
+        <Filename Value="..\..\view\view_cad_menu.pas"/>
+        <Caret Line="60" Column="16" TopLine="53"/>
+      </Position>
+      <Position>
+        <Filename Value="..\..\view\view_cad_menu.pas"/>
+      </Position>
+      <Position>
+        <Filename Value="..\..\view\view_cad_menu.pas"/>
+        <Caret Line="25" Column="18"/>
+      </Position>
+      <Position>
+        <Filename Value="..\..\view\view_cad_menu.pas"/>
+        <Caret Line="88" Column="69" TopLine="66"/>
+      </Position>
+      <Position>
+        <Filename Value="..\..\view\view_cad_menu.pas"/>
+        <Caret Line="85" Column="44" TopLine="66"/>
+      </Position>
+      <Position>
+        <Filename Value="..\..\vo\vo_menu.pas"/>
+        <Caret Line="17" Column="31"/>
+      </Position>
+      <Position>
+        <Filename Value="C:\lazarus\lcl\lclproc.pas"/>
+        <Caret Line="24" Column="39" TopLine="8"/>
+      </Position>
+      <Position>
+        <Filename Value="..\..\vo\vo_menu.pas"/>
+        <Caret Line="8" Column="60"/>
+      </Position>
+      <Position>
+        <Filename Value="C:\lazarus\lcl\include\lcl_defines.inc"/>
+        <Caret Line="10" Column="87"/>
+      </Position>
+      <Position>
+        <Filename Value="CadMenu.lpr"/>
+        <Caret Line="10" Column="3"/>
+      </Position>
+      <Position>
+        <Filename Value="CadMenu.lpr"/>
+        <Caret Line="15" Column="24"/>
+      </Position>
+      <Position>
+        <Filename Value="CadMenu.lpr"/>
+        <Caret Line="45" Column="36" TopLine="27"/>
+      </Position>
+      <Position>
+        <Filename Value="C:\lazarus\lcl\interfaces\win32\interfaces.pp"/>
+        <Caret Line="17" Column="87"/>
+      </Position>
+    </JumpHistory>
+    <RunParams>
+      <FormatVersion Value="2"/>
+      <Modes ActiveMode="default">
+        <Mode Name="default">
+          <local>
+            <HostApplicationFilename Value="D:\DuosigErp\bin\TestarDll.exe"/>
+            <LaunchingApplication Use="True"/>
+          </local>
+        </Mode>
+      </Modes>
+    </RunParams>
+    <HistoryLists>
+      <List Name="LaunchingApplication" Type="File" Count="1">
+        <Item1 Value="C:\WINDOWS\system32\cmd.exe /C ${TargetCmdLine}"/>
+      </List>
+      <List Name="CommandLineParameters" Count="1">
+        <Item1 Value="testardll.exe"/>
+      </List>
+    </HistoryLists>
+  </ProjectSession>
+</CONFIG>

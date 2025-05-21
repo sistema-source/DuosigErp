@@ -10,8 +10,8 @@ uses
   athreads,
   {$ENDIF}
   Interfaces, // this includes the LCL widgetset
-  Forms, view_principal
-  { you can add units after this };
+  Forms, zcomponent, view_principal, model_conexao_firebird, rotas_usuario, dao_usuario, dao_pai, rotas_testes, vo_menu;
+
 
 {$R *.res}
 

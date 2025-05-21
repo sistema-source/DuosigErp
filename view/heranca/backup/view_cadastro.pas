@@ -36,7 +36,9 @@ type
     procedure FormKeyUp(Sender: TObject; var Key: word; Shift: TShiftState);
     procedure FormShow(Sender: TObject);
   private
+    FModelPai: TModelPai;
     FNomeTabela: string;
+    procedure SetModelPai(AValue: TModelPai);
     procedure SetNomeTabela(AValue: string);
 
   protected
@@ -46,7 +48,7 @@ type
     procedure EditarRegistro;
 
   public
-    property ModelPai: TModelPai;
+    property ModelPai: TModelPai read FModelPai write SetModelPai;
 
   end;
 
@@ -91,6 +93,12 @@ procedure TViewCadastro.SetNomeTabela(AValue: string);
 begin
   if FNomeTabela = AValue then Exit;
   FNomeTabela := AValue;
+end;
+
+procedure TViewCadastro.SetModelPai(AValue: TModelPai);
+begin
+  if FModelPai=AValue then Exit;
+  FModelPai:=AValue;
 end;
 
 procedure TViewCadastro.ConfigurarBotao(pBotao: TBCButton);

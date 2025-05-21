@@ -1,0 +1,9 @@
+object ModelPai: TModelPai
+  OnCreate = DataModuleCreate
+  OldCreateOrder = False
+  Height = 188
+  HorizontalOffset = 890
+  VerticalOffset = 246
+  Width = 188
+  PPI = 120
+end

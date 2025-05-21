@@ -37,7 +37,7 @@ var
 begin
   LArquivo := ExtractFilePath(ParamStr(0)) + ChangeFileExt(ParamStr(0), '.ini');
 
-  LArqConfiguracao := TIniFile.Create;
+  LArqConfiguracao := TIniFile.Create(LArquivo);
   try
     FBaseApi := LArqConfiguracao.ReadString('CONFIGURACAO', 'Api_Base', 'www.duotectestes.ddns.com.br:8080');
     LArqConfiguracao.WriteString('CONFIGURACAO', 'Api_Base', FBaseApi);

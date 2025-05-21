@@ -1,0 +1,22 @@
+object ViewTestarDll: TViewTestarDll
+  Left = 461
+  Height = 800
+  Top = 57
+  Width = 1024
+  Caption = 'ViewTestarDll'
+  ClientHeight = 800
+  ClientWidth = 1024
+  DesignTimePPI = 120
+  LCLVersion = '2.2.6.0'
+  object ScrollBox1: TScrollBox
+    Left = 0
+    Height = 800
+    Top = 0
+    Width = 1024
+    HorzScrollBar.Page = 1
+    VertScrollBar.Page = 1
+    Align = alClient
+    TabOrder = 0
+    OnClick = ScrollBox1Click
+  end
+end

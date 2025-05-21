@@ -1,0 +1,62 @@
+inherited ViewCadMenu: TViewCadMenu
+  Left = 408
+  Top = 318
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  OnShow = nil
+  inherited NbCadastro: TNotebook
+    PageIndex = 1
+    inherited PgCadastro: TPage
+      inherited PnlBotoesCadastro: TPanel
+        inherited BtnSalvar: TSpeedButton
+          Left = 137
+          Visible = False
+        end
+        inherited BtnVoltar: TSpeedButton
+          Left = 1
+        end
+      end
+      inherited ScrBxDesktop: TScrollBox
+        HorzScrollBar.Page = 121
+        VertScrollBar.Page = 97
+        ClientHeight = 351
+        ClientWidth = 853
+        object TrVwMenu: TTreeView[0]
+          Left = 0
+          Height = 351
+          Top = 0
+          Width = 853
+          Align = alClient
+          AutoExpand = True
+          Font.CharSet = ANSI_CHARSET
+          Font.Height = -16
+          Font.Pitch = fpVariable
+          Font.Quality = fqDraft
+          Images = ImgCheck
+          ParentFont = False
+          ReadOnly = True
+          TabOrder = 0
+          OnDblClick = TrVwMenuDblClick
+          Options = [tvoAutoExpand, tvoAutoItemHeight, tvoHideSelection, tvoKeepCollapsedNodes, tvoReadOnly, tvoShowButtons, tvoShowLines, tvoShowRoot, tvoToolTips, tvoThemedDraw]
+        end
+      end
+    end
+  end
+  object ImgCheck: TImageList[2]
+    Left = 472
+    Top = 72
+    Bitmap = {
+      4C7A020000001000000010000000490100000000000078DAAD93316EC2401045
+      43C121D2202AE402728294164A4DB7050DAD1B6E4072002B92AF62380445AE91
+      0A4311C555A4E5AFF491BE366B83345EE9151ECF9F999DD9F1DE3F79016706DE
+      410DBE494DDBCC47FEA21B812D68C11194C09192B6963EA384F600CE60DD9363
+      4D9F83C660CC609F7469C57742DFADDCB7EDCBDB51472BBD3A3EA0598137F90E
+      FDD8B1B7E51DED06FC8518622B65464EEC2F6091D06EA2984EE6ABFA02FC80D7
+      2E6DA4FF573FCE27F8EDD246F527FBC73A563D3DB9F5CF343FEBFB19E2FD5AF7
+      6788FD15FD147C44FA3D6DD33BFB1F66D6808A7567C4D1D6D02775F790EF0BCC
+      7B72CCE95347FB5FD03E7EE07E63FA1672DFE69617E759F747748BF04FEA68A4
+      5755E47702B9D872DA742F2BE9B38B72E57C274B72D678B27F7BCE274BD41B74
+      17B24CFCCF64BE16BDB57E6BFF4CF3B3BE9F21DEAF757F2CFB7B0556B6581C
+    }
+  end
+end

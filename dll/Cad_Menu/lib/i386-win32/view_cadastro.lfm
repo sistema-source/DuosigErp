@@ -1,0 +1,202 @@
+inherited ViewCadastro: TViewCadastro
+  Left = 498
+  Height = 426
+  Top = 294
+  Width = 857
+  Caption = 'Form1'
+  ClientHeight = 426
+  ClientWidth = 857
+  KeyPreview = False
+  OnKeyUp = FormKeyUp
+  OnShow = FormShow
+  inherited LblTitulo: TLabel
+    Height = 21
+    Width = 852
+    Font.Height = -16
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object NbCadastro: TNotebook[1]
+    Left = 0
+    Height = 405
+    Top = 21
+    Width = 857
+    PageIndex = 0
+    Align = alClient
+    TabOrder = 0
+    object PgPesquisa: TPage
+      object DBGrid1: TDBGrid
+        Left = 0
+        Height = 323
+        Top = 32
+        Width = 857
+        Align = alClient
+        Color = clWindow
+        Columns = <>
+        TabOrder = 0
+      end
+      object Panel1: TPanel
+        Left = 0
+        Height = 32
+        Top = 0
+        Width = 857
+        Align = alTop
+        ClientHeight = 32
+        ClientWidth = 857
+        Font.CharSet = ANSI_CHARSET
+        Font.Height = -16
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        ParentFont = False
+        TabOrder = 1
+        object Label1: TLabel
+          Left = 6
+          Height = 30
+          Top = 1
+          Width = 70
+          Align = alLeft
+          BorderSpacing.Left = 5
+          Caption = 'Pesquisar '
+          Layout = tlCenter
+          ParentColor = False
+        end
+        object EdtPesquisar: TEdit
+          Left = 81
+          Height = 24
+          Top = 4
+          Width = 464
+          Align = alLeft
+          BorderSpacing.Left = 5
+          BorderSpacing.Top = 3
+          BorderSpacing.Bottom = 3
+          TabOrder = 0
+          Text = 'EdtPesquisar'
+        end
+        object BtnPesquisar: TSpeedButton
+          Left = 548
+          Height = 24
+          Top = 4
+          Width = 95
+          Align = alLeft
+          BorderSpacing.Left = 3
+          BorderSpacing.Top = 3
+          BorderSpacing.Bottom = 3
+          Caption = '[F5] Pesquisar'
+          Flat = True
+          Font.CharSet = ANSI_CHARSET
+          Font.Height = -16
+          Font.Pitch = fpVariable
+          Font.Quality = fqDraft
+          ParentFont = False
+        end
+      end
+      object PnlBotoesPesquisa: TPanel
+        Left = 0
+        Height = 50
+        Top = 355
+        Width = 857
+        Align = alBottom
+        ClientHeight = 50
+        ClientWidth = 857
+        TabOrder = 2
+        object BtnNovo: TSpeedButton
+          Left = 1
+          Height = 48
+          Top = 1
+          Width = 111
+          Align = alLeft
+          Caption = '[F2]  Novo'
+          Flat = True
+          Font.CharSet = ANSI_CHARSET
+          Font.Height = -16
+          Font.Pitch = fpVariable
+          Font.Quality = fqDraft
+          OnClick = BtnNovoClick
+          ParentFont = False
+        end
+        object BtnApagar: TSpeedButton
+          Left = 248
+          Height = 48
+          Top = 1
+          Width = 136
+          Align = alLeft
+          Caption = '[F6]  Apagar'
+          Flat = True
+          Font.CharSet = ANSI_CHARSET
+          Font.Height = -16
+          Font.Pitch = fpVariable
+          Font.Quality = fqDraft
+          ParentFont = False
+        end
+        object BtnApagar1: TSpeedButton
+          Left = 112
+          Height = 48
+          Top = 1
+          Width = 136
+          Align = alLeft
+          Caption = '[F3]  Editar'
+          Flat = True
+          Font.CharSet = ANSI_CHARSET
+          Font.Height = -16
+          Font.Pitch = fpVariable
+          Font.Quality = fqDraft
+          ParentFont = False
+        end
+      end
+    end
+    object PgCadastro: TPage
+      object PnlBotoesCadastro: TPanel
+        Left = 0
+        Height = 50
+        Top = 355
+        Width = 857
+        Align = alBottom
+        ClientHeight = 50
+        ClientWidth = 857
+        TabOrder = 0
+        object BtnSalvar: TSpeedButton
+          Left = 1
+          Height = 48
+          Top = 1
+          Width = 111
+          Align = alLeft
+          Caption = '[F12]  Salvar'
+          Flat = True
+          Font.CharSet = ANSI_CHARSET
+          Font.Height = -16
+          Font.Pitch = fpVariable
+          Font.Quality = fqDraft
+          OnClick = BtnNovoClick
+          ParentFont = False
+        end
+        object BtnVoltar: TSpeedButton
+          Left = 112
+          Height = 48
+          Top = 1
+          Width = 136
+          Align = alLeft
+          Caption = '[ESC]  &Voltar'
+          Flat = True
+          Font.CharSet = ANSI_CHARSET
+          Font.Height = -16
+          Font.Pitch = fpVariable
+          Font.Quality = fqDraft
+          OnClick = BtnVoltarClick
+          ParentFont = False
+        end
+      end
+      object ScrBxDesktop: TScrollBox
+        Left = 0
+        Height = 355
+        Top = 0
+        Width = 857
+        HorzScrollBar.Page = 1
+        VertScrollBar.Page = 1
+        Align = alClient
+        Color = clMoneyGreen
+        ParentColor = False
+        TabOrder = 1
+      end
+    end
+  end
+end

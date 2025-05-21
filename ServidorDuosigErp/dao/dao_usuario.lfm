@@ -1,0 +1,11 @@
+inherited DaoUsuario: TDaoUsuario
+  Height = 150
+  HorizontalOffset = 712
+  VerticalOffset = 197
+  Width = 310
+  object QryUsuario: TZQuery[0]
+    Params = <>
+    Left = 48
+    Top = 8
+  end
+end

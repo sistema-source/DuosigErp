@@ -12,7 +12,14 @@ type
   { TModelPai }
 
   TModelPai = class(TDataModule)
+    procedure DataModuleCreate(Sender: TObject);
   private
+    FApiBase: String;
+    FEndPoint: String;
+    FUsuario: String;
+    procedure SetApiBase(AValue: String);
+    procedure SetEndPoint(AValue: String);
+    procedure SetUsuario(AValue: String);
 
   public
     procedure ApagarRegistro;
@@ -20,9 +27,10 @@ type
     procedure EditarRegistro;
     procedure GravarRegistro;
 
-    property ApiBase : String;
-    property EndPoint : String;
+    property ApiBase : String read FApiBase write SetApiBase;
+    property EndPoint : String read FEndPoint write SetEndPoint;
 
+    property Usuario  : String read FUsuario write SetUsuario;
 
   end;
 
@@ -32,6 +40,29 @@ implementation
 {$R *.lfm}
 
 { TModelPai }
+
+procedure TModelPai.DataModuleCreate(Sender: TObject);
+begin
+  FUsuario := 'ADMIN';
+end;
+
+procedure TModelPai.SetApiBase(AValue: String);
+begin
+  if FApiBase=AValue then Exit;
+  FApiBase:=AValue;
+end;
+
+procedure TModelPai.SetEndPoint(AValue: String);
+begin
+  if FEndPoint=AValue then Exit;
+  FEndPoint:=AValue;
+end;
+
+procedure TModelPai.SetUsuario(AValue: String);
+begin
+  if FUsuario=AValue then Exit;
+  FUsuario:=AValue;
+end;
 
 procedure TModelPai.ApagarRegistro;
 begin

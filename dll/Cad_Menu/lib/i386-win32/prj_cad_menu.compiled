@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <Compiler Value="C:\lazarus\fpc\3.2.2\bin\i386-win32\fpc.exe" Date="1449426723"/>
+  <Params Value=" -MObjFPC -Scghi -O1 -gw2 -godwarfsets -gl -WG -l -vewnhibq -FiD:\Sistemas\Lazarus\DuosigErp\dll\Cad_Menu\lib\i386-win32 -FuC:\lazarus\lcl\units\i386-win32\win32 -FuC:\lazarus\lcl\units\i386-win32 -FuC:\lazarus\components\freetype\lib\i386-win32 -FuC:\lazarus\components\lazutils\lib\i386-win32 -FuC:\lazarus\packager\units\i386-win32 -FuD:\Sistemas\Lazarus\DuosigErp\dll\Cad_Menu\ -FUD:\Sistemas\Lazarus\DuosigErp\dll\Cad_Menu\lib\i386-win32\ -FED:\Sistemas\Lazarus\DuosigErp\dll\Cad_Menu\ -oD:\Sistemas\Lazarus\DuosigErp\dll\Cad_Menu\prj_cad_menu.exe -dLCL -dLCLwin32 prj_cad_menu.lpr"/>
+  <Complete Value="False"/>
+</CONFIG>

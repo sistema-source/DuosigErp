@@ -1,0 +1,54 @@
+uses
+  fpjson, jsonparser, SysUtils, Classes;
+
+{ TMenu }
+
+procedure TMenu.PopulateFromJSON(const AJSON: string);
+var
+  JSONArray: TJSONArray;
+  I, J: Integer;
+  JSONModule: TJSONObject;
+  ModuleName: string;
+  ModuloObject, OpcaoObject: TJSONObject;
+  Modulo: TModulo;
+  OpcaoMenu: TOpcaoMenu;
+begin
+  JSONArray := TJSONArray(GetJSON(AJSON));
+  try
+    for I := 0 to JSONArray.Count - 1 do
+    begin
+      JSONModule := JSONArray.Objects[I];
+
+      if JSONModule.Count > 0 then
+      begin
+        ModuleName := JSONModule.Names[0];
+        ModuloObject := JSONModule.Objects[ModuleName];
+
+        Modulo := TModulo.Create;
+        Modulo.NomeModulo := ModuleName;
+
+        for J := 0 to ModuloObject.Count - 1 do
+        begin
+          OpcaoObject := ModuloObject.Objects[J];
+          OpcaoMenu := TOpcaoMenu.Create;
+
+          OpcaoMenu.NomeOpcao := ModuloObject.Names[J];
+          OpcaoMenu.NomeDll := OpcaoObject.Get('nome_dll', '');
+          OpcaoMenu.Create := OpcaoObject.Get('criar', 0);
+          OpcaoMenu.Read := OpcaoObject.Get('ler', 0);
+          OpcaoMenu.Update := OpcaoObject.Get('editar', 0);
+          OpcaoMenu.Delete := OpcaoObject.Get('apagar', 0);
+          OpcaoMenu.Print := OpcaoObject.Get('print', 0);
+          OpcaoMenu.VersaoDll := OpcaoObject.Get('versao_dll', '');
+          OpcaoMenu.Id := OpcaoObject.Get('id', '');
+
+          Modulo.AddOpcao(OpcaoMenu);
+        end;
+
+        AddModulo(Modulo);
+      end;
+    end;
+  finally
+    JSONArray.Free;
+  end;
+end;

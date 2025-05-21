@@ -51,4 +51,9 @@ begin
    result := 116;
 end;
 
+class function TTeclas.Tecla_F6: word;
+begin
+    result := 117;
+end;
+
 end.
