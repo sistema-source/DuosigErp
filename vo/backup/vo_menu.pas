@@ -5,7 +5,7 @@ unit vo_menu;
 interface
 
 uses
-  Classes, SysUtils, fpjson, jsonparser;
+  Classes, SysUtils, fpjson, jsonparser, contnrs;
 
 type
 
@@ -52,14 +52,14 @@ type
   TModulo = class
   private
     FNomeModulo: string;
-    FOpcoes: TList;
+    FOpcoes: TObjectList;
     procedure SetNomeModulo(AValue: string);
-    procedure SetOpcoes(AValue: TList);
+    procedure SetOpcoes(AValue: TObjectList);
   public
     constructor Create;
     destructor Destroy; override;
     property NomeModulo: string read FNomeModulo write SetNomeModulo;
-    property Opcoes: TList read FOpcoes write SetOpcoes;
+    property Opcoes: TObjectList read FOpcoes write SetOpcoes;
     function AddOpcao(pOpcaoMenu: TOpcaoMenu): integer;
     function ToJSON: TJSONObject;
   end;
@@ -69,15 +69,15 @@ type
 
   TMenu = class
   private
-    FModulos: TList;
+    FModulos: TObjectList;
     FNome: string;
-    procedure SetModulos(AValue: TList);
+    procedure SetModulos(AValue: TObjectList);
     procedure SetNome(AValue: string);
   public
     constructor Create;
     destructor Destroy; override;
     property Nome: string read FNome write SetNome;
-    property Modulos: TList read FModulos write SetModulos;
+    property Modulos: TObjectList read FModulos write SetModulos;
     function AddModulo(pModulo: TModulo): integer;
     function ToJSON: string;
     procedure PopulateFromJSON(const AJSON: string);
@@ -88,7 +88,7 @@ implementation
 
 { TMenu }
 
-procedure TMenu.SetModulos(AValue: TList);
+procedure TMenu.SetModulos(AValue: TObjectList);
 begin
   if FModulos = AValue then Exit;
   FModulos := AValue;
@@ -102,7 +102,8 @@ end;
 
 constructor TMenu.Create;
 begin
-  FModulos := TList.Create;
+  FModulos := TObjectList.Create;
+  FModulos.OwnsObjects:=true;
 end;
 
 destructor TMenu.Destroy;
@@ -274,7 +275,7 @@ begin
   FNomeModulo := AValue;
 end;
 
-procedure TModulo.SetOpcoes(AValue: TList);
+procedure TModulo.SetOpcoes(AValue: TObjectList);
 begin
   if FOpcoes = AValue then Exit;
   FOpcoes := AValue;
@@ -282,7 +283,7 @@ end;
 
 constructor TModulo.Create;
 begin
-  FOpcoes := TList.Create;
+  FOpcoes := TObjectList.Create;
 end;
 
 destructor TModulo.Destroy;

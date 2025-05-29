@@ -1,0 +1,108 @@
+inherited ModelGrupoUsuarios: TModelGrupoUsuarios
+  OnCreate = DataModuleCreate
+  OnDestroy = DataModuleDestroy
+  Height = 233
+  HorizontalOffset = 569
+  VerticalOffset = 159
+  Width = 287
+  object TblGrupoUsuario: TBufDataset[0]
+    FieldDefs = <>
+    Left = 64
+    Top = 96
+    object TblGrupoUsuarioId: TStringField
+      FieldKind = fkData
+      FieldName = 'Id'
+      Index = 0
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 36
+    end
+    object TblGrupoUsuarioNome: TStringField
+      FieldKind = fkData
+      FieldName = 'Nome'
+      Index = 1
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 60
+    end
+    object TblGrupoUsuarioIdSmtp: TStringField
+      FieldKind = fkData
+      FieldName = 'IdSmtp'
+      Index = 2
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 36
+    end
+    object TblGrupoUsuarioNomeServidorSMTP: TStringField
+      FieldKind = fkData
+      FieldName = 'NomeServidorSMTP'
+      Index = 3
+      LookupCache = False
+      LookupDataSet = ModelSmtp.TblSmtp
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+    end
+  end
+  object TblCadGrupoUsuario: TBufDataset[1]
+    FieldDefs = <>
+    Left = 200
+    Top = 96
+    object TblCadGrupoUsuarioID: TStringField
+      FieldKind = fkData
+      FieldName = 'ID'
+      Index = 0
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 36
+    end
+    object TblCadGrupoUsuarioNOME: TStringField
+      FieldKind = fkData
+      FieldName = 'NOME'
+      Index = 1
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      OnValidate = ValidarCampo
+      Size = 60
+    end
+    object TblCadGrupoUsuarioID_TBL002: TStringField
+      FieldKind = fkData
+      FieldName = 'ID_TBL002'
+      Index = 2
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 36
+    end
+    object TblCadGrupoUsuarioNOME_SERVIDOR_SMP: TStringField
+      FieldKind = fkData
+      FieldName = 'NOME_SERVIDOR_SMP'
+      Index = 3
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 255
+    end
+    object TblCadGrupoUsuarioATIVO: TLongintField
+      FieldKind = fkData
+      FieldName = 'ATIVO'
+      Index = 4
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+    end
+  end
+end

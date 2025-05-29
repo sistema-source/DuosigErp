@@ -1,0 +1,188 @@
+object ViewCadDominio: TViewCadDominio
+  Left = 501
+  Height = 353
+  Top = 219
+  Width = 484
+  Caption = 'ViewCadDominio'
+  ClientHeight = 353
+  ClientWidth = 484
+  Font.CharSet = ANSI_CHARSET
+  Font.Height = -16
+  Font.Pitch = fpVariable
+  Font.Quality = fqDraft
+  OnShow = FormShow
+  LCLVersion = '3.8.0.0'
+  object Panel1: TPanel
+    Left = 0
+    Height = 42
+    Top = 0
+    Width = 484
+    Align = alTop
+    Caption = 'Domínio'
+    TabOrder = 0
+  end
+  object Panel2: TPanel
+    Left = 0
+    Height = 261
+    Top = 42
+    Width = 484
+    Align = alClient
+    ClientHeight = 261
+    ClientWidth = 484
+    TabOrder = 1
+    object Label1: TLabel
+      Left = 11
+      Height = 21
+      Top = 6
+      Width = 462
+      Align = alTop
+      BorderSpacing.Left = 10
+      BorderSpacing.Top = 5
+      BorderSpacing.Right = 10
+      Caption = 'Nome'
+    end
+    object Label2: TLabel
+      Left = 11
+      Height = 21
+      Top = 66
+      Width = 472
+      Align = alTop
+      BorderSpacing.Left = 10
+      BorderSpacing.Top = 5
+      Caption = 'Tipo do Campo'
+    end
+    object Label3: TLabel
+      Left = 11
+      Height = 21
+      Top = 119
+      Width = 472
+      Align = alTop
+      BorderSpacing.Left = 10
+      BorderSpacing.Top = 5
+      Caption = 'Tamanho'
+    end
+    object Label4: TLabel
+      Left = 11
+      Height = 21
+      Top = 179
+      Width = 472
+      Align = alTop
+      BorderSpacing.Left = 10
+      BorderSpacing.Top = 5
+      Caption = 'Escala'
+    end
+    object EdtNomeDominio: TDBEdit
+      Left = 11
+      Height = 29
+      Top = 32
+      Width = 462
+      DataField = 'NOME_DOMINIO'
+      DataSource = DtSrcDominio
+      Align = alTop
+      BorderSpacing.Left = 10
+      BorderSpacing.Top = 5
+      BorderSpacing.Right = 10
+      MaxLength = 0
+      TabOrder = 0
+    end
+    object EdtTamanho: TDBEdit
+      Left = 11
+      Height = 29
+      Top = 145
+      Width = 72
+      DataField = 'TAMANHO'
+      DataSource = DtSrcDominio
+      Align = alTop
+      BorderSpacing.Left = 10
+      BorderSpacing.Top = 5
+      BorderSpacing.Right = 400
+      MaxLength = 0
+      TabOrder = 2
+    end
+    object EdtEscala: TDBEdit
+      Left = 11
+      Height = 29
+      Top = 205
+      Width = 72
+      DataField = 'ESCALA'
+      DataSource = DtSrcDominio
+      Align = alTop
+      BorderSpacing.Left = 10
+      BorderSpacing.Top = 5
+      BorderSpacing.Right = 400
+      MaxLength = 0
+      TabOrder = 3
+    end
+    object EdtTipoCampo: TDBComboBox
+      Left = 11
+      Height = 27
+      Top = 87
+      Width = 462
+      Align = alTop
+      BorderSpacing.Left = 10
+      BorderSpacing.Right = 10
+      CharCase = ecUppercase
+      DataField = 'TIPO_CAMPO'
+      DataSource = DtSrcDominio
+      ItemHeight = 21
+      Items.Strings = (
+        '0 - integer'
+        '1 - varchar'
+        '2 - char'
+        '3 - date'
+        '4 - numeric'
+        '5 - timestamp'
+        '6 - blobtext'
+        '7 - blobbin'
+      )
+      MaxLength = 0
+      Style = csOwnerDrawFixed
+      TabOrder = 1
+    end
+  end
+  object Panel3: TPanel
+    Left = 0
+    Height = 50
+    Top = 303
+    Width = 484
+    Align = alBottom
+    ClientHeight = 50
+    ClientWidth = 484
+    TabOrder = 2
+    object BtnSalvar: TSpeedButton
+      Left = 1
+      Height = 48
+      Top = 1
+      Width = 111
+      Align = alLeft
+      Caption = '[F12]  Salvar'
+      Flat = True
+      Font.CharSet = ANSI_CHARSET
+      Font.Height = -16
+      Font.Pitch = fpVariable
+      Font.Quality = fqDraft
+      OnClick = BtnSalvarClick
+      ParentFont = False
+    end
+    object BtnVoltar: TSpeedButton
+      Left = 112
+      Height = 48
+      Top = 1
+      Width = 136
+      Align = alLeft
+      Caption = '[ESC]  &Voltar'
+      Flat = True
+      Font.CharSet = ANSI_CHARSET
+      Font.Height = -16
+      Font.Pitch = fpVariable
+      Font.Quality = fqDraft
+      OnClick = BtnVoltarClick
+      ParentFont = False
+    end
+  end
+  object DtSrcDominio: TDataSource
+    DataSet = ModelCase.TBL0003
+    Left = 344
+    Top = 256
+  end
+end

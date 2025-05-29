@@ -5,7 +5,7 @@ unit model_pai;
 interface
 
 uses
-  Classes, SysUtils;
+  Classes, SysUtils, db;
 
 type
 
@@ -22,10 +22,12 @@ type
     procedure SetUsuario(AValue: String);
 
   public
-    procedure ApagarRegistro;
-    procedure NovoRegistro;
-    procedure EditarRegistro;
-    procedure GravarRegistro;
+    function ApagarRegistro : Boolean;
+    function NovoRegistro: Boolean;
+    function EditarRegistro: Boolean;
+    function GravarRegistro: Boolean;
+
+    procedure ValidarCampo(Sender: TField);
 
     property ApiBase : String read FApiBase write SetApiBase;
     property EndPoint : String read FEndPoint write SetEndPoint;
@@ -64,24 +66,29 @@ begin
   FUsuario:=AValue;
 end;
 
-procedure TModelPai.ApagarRegistro;
+function TModelPai.ApagarRegistro: Boolean;
 begin
-  // Executar a url para apagar o registro e atualizar o dataset da pesquisa
+
 end;
 
-procedure TModelPai.NovoRegistro;
+function TModelPai.NovoRegistro: Boolean;
 begin
-  //
+
 end;
 
-procedure TModelPai.EditarRegistro;
+function TModelPai.EditarRegistro: Boolean;
 begin
-  //
+
 end;
 
-procedure TModelPai.GravarRegistro;
+function TModelPai.GravarRegistro: Boolean;
 begin
-  // Gerar o Json e fazer um post na api e retornar a pagina de pesquisa
+
+end;
+
+procedure TModelPai.ValidarCampo(Sender: TField);
+begin
+
 end;
 
 end.

@@ -1,7 +1,0 @@
-object ModelMigracao: TModelMigracao
-  OldCreateOrder = False
-  Height = 150
-  HorizontalOffset = 1520
-  VerticalOffset = 164
-  Width = 150
-end

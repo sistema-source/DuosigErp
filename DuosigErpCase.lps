@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <PathDelim Value="\"/>
+    <Version Value="12"/>
+    <BuildModes Active="Default"/>
+    <Units>
+      <Unit>
+        <Filename Value="DuosigErpCase.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="58" Y="11"/>
+        <UsageCount Value="30"/>
+      </Unit>
+      <Unit>
+        <Filename Value="view_principal.pas"/>
+        <ComponentName Value="Form1"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="9" Y="8"/>
+        <UsageCount Value="29"/>
+      </Unit>
+      <Unit>
+        <Filename Value="view\heranca\view_cadastro.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="ViewCadastro"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="128"/>
+        <CursorPos X="7" Y="80"/>
+        <UsageCount Value="30"/>
+      </Unit>
+      <Unit>
+        <Filename Value="view\heranca\view_pai.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="ViewPai"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="31" Y="8"/>
+        <UsageCount Value="30"/>
+      </Unit>
+      <Unit>
+        <Filename Value="model\model_sessao.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="5" Y="17"/>
+        <UsageCount Value="30"/>
+      </Unit>
+      <Unit>
+        <Filename Value="view\view_duosigcaseerp.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="ViewCadDuosiCaseErp"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <TopLine Value="113"/>
+        <CursorPos X="72" Y="139"/>
+        <UsageCount Value="30"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="model\Heranca\model_pai.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="ModelPai"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="DataModule"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos Y="2"/>
+        <UsageCount Value="30"/>
+      </Unit>
+      <Unit>
+        <Filename Value="Biblioteca\teclas_funcao.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="-1"/>
+        <UsageCount Value="30"/>
+      </Unit>
+      <Unit>
+        <Filename Value="Biblioteca\utils_funcoes.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="42" Y="23"/>
+        <UsageCount Value="30"/>
+      </Unit>
+      <Unit>
+        <Filename Value="model\conexao\model_conexao_sqlite.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="ModelConexaoSQLite"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="DataModule"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="26" Y="15"/>
+        <UsageCount Value="30"/>
+      </Unit>
+      <Unit>
+        <Filename Value="model\conexao\model_case.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="ModelCase"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="DataModule"/>
+        <EditorIndex Value="3"/>
+        <TopLine Value="239"/>
+        <CursorPos X="46" Y="257"/>
+        <UsageCount Value="30"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="Biblioteca\observer_dataset.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos Y="19"/>
+        <UsageCount Value="28"/>
+      </Unit>
+      <Unit>
+        <Filename Value="view\view_blend.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="ViewBlend"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="1"/>
+        <CursorPos Y="17"/>
+        <UsageCount Value="22"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="view\view_cad_dominio.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="ViewCadDominio"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="2"/>
+        <TopLine Value="40"/>
+        <CursorPos X="107" Y="59"/>
+        <UsageCount Value="20"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit>
+    </Units>
+    <JumpHistory HistoryIndex="29">
+      <Position>
+        <Filename Value="model\conexao\model_case.pas"/>
+        <Caret Line="93" Column="46" TopLine="75"/>
+      </Position>
+      <Position>
+        <Filename Value="model\conexao\model_case.pas"/>
+        <Caret Line="92" Column="46" TopLine="74"/>
+      </Position>
+      <Position>
+        <Filename Value="model\conexao\model_case.pas"/>
+        <Caret Line="91" Column="46" TopLine="73"/>
+      </Position>
+      <Position>
+        <Filename Value="model\conexao\model_case.pas"/>
+        <Caret Line="92" Column="46" TopLine="74"/>
+      </Position>
+      <Position>
+        <Filename Value="model\conexao\model_case.pas"/>
+        <Caret Line="93" Column="46" TopLine="75"/>
+      </Position>
+      <Position>
+        <Filename Value="model\conexao\model_case.pas"/>
+        <Caret Line="94" Column="46" TopLine="76"/>
+      </Position>
+      <Position>
+        <Filename Value="view\view_duosigcaseerp.pas"/>
+        <Caret Line="108" Column="34" TopLine="84"/>
+      </Position>
+      <Position>
+        <Filename Value="view\view_duosigcaseerp.pas"/>
+        <Caret Line="97" Column="17" TopLine="84"/>
+      </Position>
+      <Position>
+        <Filename Value="view\view_duosigcaseerp.pas"/>
+      </Position>
+      <Position>
+        <Filename Value="view\view_duosigcaseerp.pas"/>
+        <Caret Line="52" Column="29" TopLine="24"/>
+      </Position>
+      <Position>
+        <Filename Value="view\view_duosigcaseerp.pas"/>
+        <Caret Line="139" TopLine="112"/>
+      </Position>
+      <Position>
+        <Filename Value="view\view_duosigcaseerp.pas"/>
+        <Caret Line="135" Column="28" TopLine="112"/>
+      </Position>
+      <Position>
+        <Filename Value="view\view_duosigcaseerp.pas"/>
+        <Caret Line="9" Column="97" TopLine="52"/>
+      </Position>
+      <Position>
+        <Filename Value="view\view_duosigcaseerp.pas"/>
+        <Caret Line="52" Column="29" TopLine="35"/>
+      </Position>
+      <Position>
+        <Filename Value="view\view_duosigcaseerp.pas"/>
+        <Caret Line="140" Column="25" TopLine="113"/>
+      </Position>
+      <Position>
+        <Filename Value="view\view_cad_dominio.pas"/>
+        <Caret Line="67" Column="32" TopLine="38"/>
+      </Position>
+      <Position>
+        <Filename Value="model\conexao\model_case.pas"/>
+        <Caret Line="94" Column="25" TopLine="77"/>
+      </Position>
+      <Position>
+        <Filename Value="model\conexao\model_case.pas"/>
+        <Caret Line="95" Column="25" TopLine="78"/>
+      </Position>
+      <Position>
+        <Filename Value="view\view_cad_dominio.pas"/>
+        <Caret Line="58" Column="125" TopLine="39"/>
+      </Position>
+      <Position>
+        <Filename Value="view\view_cad_dominio.pas"/>
+        <Caret Line="59" Column="27" TopLine="40"/>
+      </Position>
+      <Position>
+        <Filename Value="model\conexao\model_case.pas"/>
+        <Caret Line="166" TopLine="149"/>
+      </Position>
+      <Position>
+        <Filename Value="model\conexao\model_case.pas"/>
+      </Position>
+      <Position>
+        <Filename Value="model\conexao\model_case.pas"/>
+        <Caret Line="78" Column="22" TopLine="50"/>
+      </Position>
+      <Position>
+        <Filename Value="model\conexao\model_case.pas"/>
+        <Caret Line="265" Column="42" TopLine="239"/>
+      </Position>
+      <Position>
+        <Filename Value="model\conexao\model_case.pas"/>
+        <Caret Line="166" Column="51" TopLine="149"/>
+      </Position>
+      <Position>
+        <Filename Value="model\conexao\model_case.pas"/>
+        <Caret Line="257" TopLine="239"/>
+      </Position>
+      <Position>
+        <Filename Value="model\conexao\model_case.pas"/>
+        <Caret Line="259" TopLine="239"/>
+      </Position>
+      <Position>
+        <Filename Value="model\conexao\model_case.pas"/>
+        <Caret Line="263" TopLine="239"/>
+      </Position>
+      <Position>
+        <Filename Value="model\conexao\model_case.pas"/>
+        <Caret Line="264" TopLine="239"/>
+      </Position>
+      <Position>
+        <Filename Value="model\conexao\model_case.pas"/>
+        <Caret Line="266" TopLine="239"/>
+      </Position>
+    </JumpHistory>
+    <RunParams>
+      <FormatVersion Value="2"/>
+      <Modes ActiveMode=""/>
+    </RunParams>
+  </ProjectSession>
+  <Debugging>
+    <BreakPoints>
+      <Item>
+        <Kind Value="bpkSource"/>
+        <WatchScope Value="wpsLocal"/>
+        <WatchKind Value="wpkWrite"/>
+        <Source Value="model\conexao\model_case.pas"/>
+        <Line Value="59"/>
+      </Item>
+      <Item>
+        <Kind Value="bpkSource"/>
+        <WatchScope Value="wpsLocal"/>
+        <WatchKind Value="wpkWrite"/>
+        <Source Value="model\conexao\model_case.pas"/>
+        <Line Value="257"/>
+      </Item>
+    </BreakPoints>
+  </Debugging>
+</CONFIG>

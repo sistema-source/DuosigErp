@@ -12,7 +12,8 @@ object ViewPai: TViewPai
   Font.Pitch = fpVariable
   Font.Quality = fqDraft
   KeyPreview = True
-  LCLVersion = '2.2.6.0'
+  OnCreate = FormCreate
+  LCLVersion = '3.8.0.0'
   object LblTitulo: TLabel
     Left = 5
     Height = 17
@@ -22,5 +23,10 @@ object ViewPai: TViewPai
     BorderSpacing.Left = 5
     Caption = 'LblTitulo'
     ParentColor = False
+  end
+  object ApplicationProperties1: TApplicationProperties
+    OnException = ApplicationProperties1Exception
+    Left = 125
+    Top = 65
   end
 end

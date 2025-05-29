@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <PathDelim Value="\"/>
+    <Version Value="12"/>
+    <BuildModes Active="Default"/>
+    <Units>
+      <Unit>
+        <Filename Value="project1.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="1"/>
+        <CursorPos X="71" Y="18"/>
+        <UsageCount Value="20"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\..\view\heranca\view_pai.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="ViewPai"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <WindowIndex Value="-1"/>
+        <TopLine Value="-1"/>
+        <CursorPos X="-1" Y="-1"/>
+        <UsageCount Value="20"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\..\view\heranca\view_cadastro.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="ViewCadastro"/>
+        <ResourceBaseClass Value="Form"/>
+        <CursorPos X="27" Y="26"/>
+        <UsageCount Value="20"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\..\Biblioteca\teclas_funcao.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="-1"/>
+        <WindowIndex Value="-1"/>
+        <TopLine Value="-1"/>
+        <CursorPos X="-1" Y="-1"/>
+        <UsageCount Value="20"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\..\model\Heranca\model_pai.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="ModelPai"/>
+        <ResourceBaseClass Value="DataModule"/>
+        <EditorIndex Value="-1"/>
+        <WindowIndex Value="-1"/>
+        <TopLine Value="-1"/>
+        <CursorPos X="-1" Y="-1"/>
+        <UsageCount Value="20"/>
+      </Unit>
+    </Units>
+    <JumpHistory HistoryIndex="4">
+      <Position>
+        <Filename Value="..\..\view\heranca\view_cadastro.pas"/>
+        <Caret Line="12" Column="59"/>
+      </Position>
+      <Position>
+        <Filename Value="..\..\view\heranca\view_cadastro.pas"/>
+        <Caret Line="49" TopLine="23"/>
+      </Position>
+      <Position>
+        <Filename Value="..\..\view\heranca\view_cadastro.pas"/>
+        <Caret Line="95" TopLine="78"/>
+      </Position>
+      <Position>
+        <Filename Value="..\..\view\heranca\view_cadastro.pas"/>
+        <Caret Line="9" Column="66" TopLine="8"/>
+      </Position>
+      <Position>
+        <Filename Value="..\..\view\heranca\view_cadastro.pas"/>
+        <Caret Line="26" Column="66"/>
+      </Position>
+    </JumpHistory>
+    <RunParams>
+      <FormatVersion Value="2"/>
+      <Modes ActiveMode=""/>
+    </RunParams>
+  </ProjectSession>
+</CONFIG>

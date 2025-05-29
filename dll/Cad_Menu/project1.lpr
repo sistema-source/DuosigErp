@@ -10,8 +10,7 @@ uses
   athreads,
   {$ENDIF}
   Interfaces, // this includes the LCL widgetset
-  Forms, Unit1
-  { you can add units after this };
+  Forms, view_pai, view_cadastro, teclas_funcao, model_pai;
 
 {$R *.res}
 
@@ -19,7 +18,7 @@ begin
   RequireDerivedFormResource:=True;
   Application.Scaled:=True;
   Application.Initialize;
-  Application.CreateForm(TForm1, Form1);
+  Application.CreateForm(TViewCadastro, ViewCadastro);
   Application.Run;
 end.
 

@@ -1,0 +1,302 @@
+inherited ModelCase: TModelCase
+  OnCreate = DataModuleCreate
+  OnDestroy = DataModuleDestroy
+  Height = 331
+  HorizontalOffset = 393
+  VerticalOffset = 153
+  Width = 954
+  object TBL0001Pesquisa: TBufDataset[0]
+    FieldDefs = <>
+    Left = 104
+    Top = 88
+    object TBL0001PesquisaID: TStringField
+      FieldKind = fkData
+      FieldName = 'ID'
+      Index = 0
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 36
+    end
+    object TBL0001PesquisaNOME: TStringField
+      FieldKind = fkData
+      FieldName = 'NOME'
+      Index = 1
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 60
+    end
+    object TBL0001PesquisaCODIGO_TABELA: TStringField
+      FieldKind = fkData
+      FieldName = 'CODIGO_TABELA'
+      Index = 2
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 60
+    end
+  end
+  object TBL0003: TBufDataset[1]
+    FieldDefs = <>
+    OnNewRecord = TBL0003NewRecord
+    Left = 368
+    Top = 24
+    object TBL0003ID: TStringField
+      FieldKind = fkData
+      FieldName = 'ID'
+      Index = 0
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 36
+    end
+    object TBL0003NOME_DOMINIO: TStringField
+      FieldKind = fkData
+      FieldName = 'NOME_DOMINIO'
+      Index = 1
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 60
+    end
+    object TBL0003TAMANHO: TLongintField
+      FieldKind = fkData
+      FieldName = 'TAMANHO'
+      Index = 2
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+    end
+    object TBL0003ESCALA: TLongintField
+      FieldKind = fkData
+      FieldName = 'ESCALA'
+      Index = 3
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+    end
+    object TBL0003TIPO_CAMPO: TStringField
+      FieldKind = fkData
+      FieldName = 'TIPO_CAMPO'
+      Index = 4
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 60
+    end
+  end
+  object ZQuery1: TZQuery[2]
+    Params = <>
+    Left = 128
+    Top = 200
+  end
+  object TBL0001: TBufDataset[3]
+    FieldDefs = <>
+    OnNewRecord = TBL0001NewRecord
+    Left = 368
+    Top = 160
+    object TBL0001ID: TStringField
+      FieldKind = fkData
+      FieldName = 'ID'
+      Index = 0
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 36
+    end
+    object TBL0001NOME: TStringField
+      FieldKind = fkData
+      FieldName = 'NOME'
+      Index = 1
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 60
+    end
+    object TBL0001CODIGO_TABELA: TStringField
+      FieldKind = fkData
+      FieldName = 'CODIGO_TABELA'
+      Index = 2
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      OnSetText = TBL0001CODIGO_TABELASetText
+      Size = 60
+    end
+    object TBL0001DESCRICAO_TABELA: TStringField
+      FieldKind = fkData
+      FieldName = 'DESCRICAO_TABELA'
+      Index = 3
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 255
+    end
+  end
+  object TBL0002: TBufDataset[4]
+    FieldDefs = <>
+    OnNewRecord = TBL0002NewRecord
+    Left = 560
+    Top = 88
+    object TBL0002ID: TStringField
+      FieldKind = fkData
+      FieldName = 'ID'
+      Index = 0
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 36
+    end
+    object TBL0002ID_TBL0001: TStringField
+      FieldKind = fkData
+      FieldName = 'ID_TBL0001'
+      Index = 1
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 36
+    end
+    object TBL0002ID_TBL0003: TStringField
+      FieldKind = fkData
+      FieldName = 'ID_TBL0003'
+      Index = 2
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 36
+    end
+    object TBL0002NOME_CAMPO: TStringField
+      FieldKind = fkData
+      FieldName = 'NOME_CAMPO'
+      Index = 3
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 60
+    end
+    object TBL0002DESCRICAO_CAMPO: TStringField
+      FieldKind = fkData
+      FieldName = 'DESCRICAO_CAMPO'
+      Index = 4
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 255
+    end
+    object TBL0002NOME_DOMINIO: TStringField
+      FieldKind = fkLookup
+      FieldName = 'NOME_DOMINIO'
+      Index = 5
+      KeyFields = 'ID_TBL0003'
+      LookupCache = False
+      LookupDataSet = Tbl0003Pesquisa
+      LookupKeyFields = 'ID'
+      LookupResultField = 'NOME_DOMINIO'
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 60
+    end
+    object TBL0002TAMANHO: TLongintField
+      FieldKind = fkLookup
+      FieldName = 'TAMANHO'
+      Index = 6
+      KeyFields = 'ID_TBL0003'
+      LookupCache = False
+      LookupDataSet = Tbl0003Pesquisa
+      LookupKeyFields = 'ID'
+      LookupResultField = 'TAMANHO'
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+    end
+    object TBL0002ESCALA: TLongintField
+      FieldKind = fkLookup
+      FieldName = 'ESCALA'
+      Index = 7
+      KeyFields = 'ID_TBL0003'
+      LookupCache = False
+      LookupDataSet = Tbl0003Pesquisa
+      LookupKeyFields = 'ID'
+      LookupResultField = 'ESCALA'
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+    end
+  end
+  object DtSrc_Dominio: TDataSource[5]
+    Left = 672
+    Top = 96
+  end
+  object Tbl0003Pesquisa: TBufDataset[6]
+    FieldDefs = <>
+    Left = 232
+    Top = 24
+    object Tbl0003PesquisaID: TStringField
+      FieldKind = fkData
+      FieldName = 'ID'
+      Index = 0
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 36
+    end
+    object Tbl0003PesquisaNOME_DOMINIO: TStringField
+      FieldKind = fkData
+      FieldName = 'NOME_DOMINIO'
+      Index = 1
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 60
+    end
+    object Tbl0003PesquisaTAMANHO: TLongintField
+      FieldKind = fkData
+      FieldName = 'TAMANHO'
+      Index = 2
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+    end
+    object Tbl0003PesquisaESCALA: TLongintField
+      FieldKind = fkData
+      FieldName = 'ESCALA'
+      Index = 3
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+    end
+    object Tbl0003PesquisaTIPO_CAMPO: TStringField
+      FieldKind = fkData
+      FieldName = 'TIPO_CAMPO'
+      Index = 4
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 60
+    end
+  end
+end

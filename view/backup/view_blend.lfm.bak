@@ -1,0 +1,12 @@
+object ViewBlend: TViewBlend
+  Left = 458
+  Height = 485
+  Top = 145
+  Width = 572
+  AlphaBlend = True
+  AlphaBlendValue = 50
+  BorderStyle = bsNone
+  Caption = 'ViewBlend'
+  Color = clBlack
+  LCLVersion = '3.8.0.0'
+end

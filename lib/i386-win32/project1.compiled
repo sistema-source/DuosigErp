@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <Compiler Value="C:\lazarus\fpc\3.2.2\bin\i386-win32\fpc.exe" Date="1513315859"/>
+  <Params Value=" -MObjFPC -Scghi -O1 -gw3 -gl -WG -l -vewnhibq -FiD:\Sistemas\Lazarus\DuosigErp\lib\i386-win32 -FuC:\TEMP -FuC:\lazarus\lcl\units\i386-win32\win32 -FuC:\lazarus\lcl\units\i386-win32 -FuC:\lazarus\components\freetype\lib\i386-win32 -FuC:\lazarus\components\lazutils\lib\i386-win32 -FuC:\lazarus\packager\units\i386-win32 -FuD:\Sistemas\Lazarus\DuosigErp\ -FUD:\Sistemas\Lazarus\DuosigErp\lib\i386-win32\ -FED:\Sistemas\Lazarus\DuosigErp\ -oD:\Sistemas\Lazarus\DuosigErp\project1.exe -dLCL -dLCLwin32 project1.lpr"/>
+  <Complete Value="False"/>
+</CONFIG>

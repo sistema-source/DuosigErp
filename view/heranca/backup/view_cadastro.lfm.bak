@@ -1,12 +1,12 @@
 inherited ViewCadastro: TViewCadastro
-  Left = 498
+  Left = 398
   Height = 426
-  Top = 294
+  Top = 236
   Width = 857
   Caption = 'Form1'
   ClientHeight = 426
   ClientWidth = 857
-  KeyPreview = False
+  OnDestroy = FormDestroy
   OnKeyUp = FormKeyUp
   OnShow = FormShow
   inherited LblTitulo: TLabel
@@ -25,10 +25,10 @@ inherited ViewCadastro: TViewCadastro
     Align = alClient
     TabOrder = 0
     object PgPesquisa: TPage
-      object DBGrid1: TDBGrid
+      object DBGrdPesquisa: TDBGrid
         Left = 0
-        Height = 323
-        Top = 32
+        Height = 314
+        Top = 41
         Width = 857
         Align = alClient
         Color = clWindow
@@ -37,21 +37,22 @@ inherited ViewCadastro: TViewCadastro
       end
       object Panel1: TPanel
         Left = 0
-        Height = 32
+        Height = 41
         Top = 0
         Width = 857
         Align = alTop
-        ClientHeight = 32
+        ClientHeight = 41
         ClientWidth = 857
         Font.CharSet = ANSI_CHARSET
         Font.Height = -16
         Font.Pitch = fpVariable
         Font.Quality = fqDraft
+        ParentBackground = False
         ParentFont = False
         TabOrder = 1
         object Label1: TLabel
           Left = 6
-          Height = 30
+          Height = 39
           Top = 1
           Width = 70
           Align = alLeft
@@ -62,7 +63,7 @@ inherited ViewCadastro: TViewCadastro
         end
         object EdtPesquisar: TEdit
           Left = 81
-          Height = 24
+          Height = 33
           Top = 4
           Width = 464
           Align = alLeft
@@ -70,11 +71,10 @@ inherited ViewCadastro: TViewCadastro
           BorderSpacing.Top = 3
           BorderSpacing.Bottom = 3
           TabOrder = 0
-          Text = 'EdtPesquisar'
         end
         object BtnPesquisar: TSpeedButton
           Left = 548
-          Height = 24
+          Height = 33
           Top = 4
           Width = 95
           Align = alLeft
@@ -98,6 +98,7 @@ inherited ViewCadastro: TViewCadastro
         Align = alBottom
         ClientHeight = 50
         ClientWidth = 857
+        ParentBackground = False
         TabOrder = 2
         object BtnNovo: TSpeedButton
           Left = 1
@@ -126,9 +127,10 @@ inherited ViewCadastro: TViewCadastro
           Font.Height = -16
           Font.Pitch = fpVariable
           Font.Quality = fqDraft
+          OnClick = BtnApagarClick
           ParentFont = False
         end
-        object BtnApagar1: TSpeedButton
+        object BtnEditar: TSpeedButton
           Left = 112
           Height = 48
           Top = 1
@@ -140,6 +142,7 @@ inherited ViewCadastro: TViewCadastro
           Font.Height = -16
           Font.Pitch = fpVariable
           Font.Quality = fqDraft
+          OnClick = BtnEditarClick
           ParentFont = False
         end
       end
@@ -153,6 +156,7 @@ inherited ViewCadastro: TViewCadastro
         Align = alBottom
         ClientHeight = 50
         ClientWidth = 857
+        ParentBackground = False
         TabOrder = 0
         object BtnSalvar: TSpeedButton
           Left = 1
@@ -166,7 +170,7 @@ inherited ViewCadastro: TViewCadastro
           Font.Height = -16
           Font.Pitch = fpVariable
           Font.Quality = fqDraft
-          OnClick = BtnNovoClick
+          OnClick = BtnSalvarClick
           ParentFont = False
         end
         object BtnVoltar: TSpeedButton
@@ -194,9 +198,20 @@ inherited ViewCadastro: TViewCadastro
         VertScrollBar.Page = 1
         Align = alClient
         Color = clMoneyGreen
+        ParentBackground = False
         ParentColor = False
         TabOrder = 1
       end
     end
+  end
+  inherited ApplicationProperties1: TApplicationProperties[2]
+  end
+  object DtSrc_Pesquisa: TDataSource[3]
+    Left = 104
+    Top = 136
+  end
+  object DtSrc_Cadastro: TDataSource[4]
+    Left = 328
+    Top = 144
   end
 end

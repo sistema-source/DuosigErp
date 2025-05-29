@@ -1,0 +1,19 @@
+object ModelConexaoSQLite: TModelConexaoSQLite
+  OldCreateOrder = False
+  Height = 150
+  HorizontalOffset = 256
+  VerticalOffset = 145
+  Width = 705
+  object Conexao: TZConnection
+    ControlsCodePage = cCP_UTF8
+    Properties.Strings = (
+      'RawStringEncoding=DB_CP'
+    )
+    DisableSavepoints = False
+    Port = 0
+    Database = 'D:\DuosigErp\Dados\case.db'
+    Protocol = 'sqlite'
+    Left = 632
+    Top = 32
+  end
+end

@@ -1,0 +1,146 @@
+inherited ViewCadGrupo: TViewCadGrupo
+  OnDestroy = FormDestroy
+  OnKeyUp = FormKeyUp
+  OnShow = FormShow
+  inherited NbCadastro: TNotebook
+    PageIndex = 1
+    inherited PgPesquisa: TPage
+      inherited DBGrdPesquisa: TDBGrid
+        Height = 323
+        Top = 32
+        Columns = <        
+          item
+            PickList.Strings = (            )
+            Title.Caption = 'Nome do Grupo'
+            Width = 300
+            FieldName = 'NOME'
+          end>
+        DataSource = DtSrc_Pesquisa
+        OnKeyUp = DBGrdPesquisaKeyUp
+      end
+      inherited Panel1: TPanel
+        Height = 32
+        ClientHeight = 32
+        inherited Label1: TLabel
+          Height = 30
+        end
+        inherited EdtPesquisar: TEdit
+          Height = 24
+          TextHint = 'Digite o nome do grupo para pesquisar'
+        end
+        inherited BtnPesquisar: TSpeedButton
+          Height = 24
+          OnClick = BtnPesquisarClick
+        end
+      end
+      inherited PnlBotoesPesquisa: TPanel
+        inherited BtnNovo: TSpeedButton
+          OnClick = BtnNovoClick
+        end
+        inherited BtnApagar: TSpeedButton
+          OnClick = BtnApagarClick
+        end
+        inherited BtnEditar: TSpeedButton
+          OnClick = BtnEditarClick
+        end
+      end
+    end
+    inherited PgCadastro: TPage
+      OnEnter = PgCadastroEnter
+      inherited PnlBotoesCadastro: TPanel
+        inherited BtnSalvar: TSpeedButton
+          OnClick = BtnSalvarClick
+        end
+        inherited BtnVoltar: TSpeedButton
+          OnClick = BtnVoltarClick
+        end
+      end
+      inherited ScrBxDesktop: TScrollBox
+        HorzScrollBar.Page = 568
+        VertScrollBar.Page = 160
+        ClientHeight = 351
+        ClientWidth = 853
+        Color = clWhite
+        object PnlCentral: TPanel[0]
+          Left = 89
+          Height = 144
+          Top = 16
+          Width = 479
+          BevelOuter = bvNone
+          ClientHeight = 144
+          ClientWidth = 479
+          ParentBackground = False
+          TabOrder = 0
+          object LblNome: TLabel
+            Left = 16
+            Height = 17
+            Top = 8
+            Width = 97
+            Caption = 'Nome do Grupo'
+          end
+          object EdtNomeGrupo: TDBEdit
+            Left = 16
+            Height = 25
+            Top = 32
+            Width = 336
+            DataField = 'NOME'
+            DataSource = DtSrc_Cadastro
+            CharCase = ecUppercase
+            MaxLength = 0
+            TabOrder = 0
+          end
+          object Label3: TLabel
+            Left = 16
+            Height = 17
+            Top = 80
+            Width = 126
+            Caption = 'Nome Servidor SMTP'
+          end
+          object LblId_TBL0002: TDBLookupComboBox
+            Left = 16
+            Height = 25
+            Top = 104
+            Width = 332
+            CharCase = ecUppercase
+            DataField = 'ID_TBL002'
+            DataSource = DtSrc_Cadastro
+            KeyField = 'Id'
+            ListField = 'Nome'
+            ListFieldIndex = 0
+            ListSource = DtSrc_Smtp
+            LookupCache = False
+            DisplayEmpty = '-'
+            Style = csDropDownList
+            TabOrder = 1
+          end
+          object DBCheckBox1: TDBCheckBox
+            Left = 376
+            Height = 23
+            Top = 106
+            Width = 90
+            Caption = 'Ativo'
+            DataField = 'ATIVO'
+            DataSource = DtSrc_Cadastro
+            TabOrder = 2
+            ValueChecked = '1'
+            ValueUnchecked = '0'
+          end
+        end
+      end
+    end
+  end
+  inherited DtSrc_Pesquisa: TDataSource
+    Left = 688
+    Top = 192
+  end
+  inherited DtSrc_Cadastro: TDataSource
+    DataSet = ModelGrupoUsuarios.TblCadGrupoUsuario
+    Left = 688
+    Top = 112
+  end
+  object DtSrc_Smtp: TDataSource[5]
+    DataSet = ModelSmtp.TblSmtp
+    Left = 704
+    Top = 280
+  end
+end
