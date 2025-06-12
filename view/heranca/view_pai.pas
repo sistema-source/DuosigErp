@@ -59,7 +59,6 @@ begin
     NomeMetodo := NomeMetodo + sLineBreak;
   end;
 
-
   ShowMessage(LUnidade + NomeUnit + LMetodo + NomeMetodo + 'Mensagem: ' + e.Message);
 end;
 

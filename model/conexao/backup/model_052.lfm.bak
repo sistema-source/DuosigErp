@@ -1,0 +1,19 @@
+object Model052: TModel052
+  OnCreate = DataModuleCreate
+  OnDestroy = DataModuleDestroy
+  OldCreateOrder = False
+  Height = 150
+  HorizontalOffset = 456
+  VerticalOffset = 80
+  Width = 350
+  object Qry052: TZQuery
+    Params = <>
+    Left = 48
+    Top = 40
+  end
+  object Qry053: TZQuery
+    Params = <>
+    Left = 160
+    Top = 40
+  end
+end

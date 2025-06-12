@@ -7,7 +7,6 @@ object ModelConexaoFirebird: TModelConexaoFirebird
   Width = 547
   object Conexao: TZConnection
     ControlsCodePage = cCP_UTF8
-    AutoEncodeStrings = True
     ClientCodepage = 'WIN1252'
     Properties.Strings = (
       'codepage=WIN1252'

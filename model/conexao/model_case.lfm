@@ -2,8 +2,8 @@ inherited ModelCase: TModelCase
   OnCreate = DataModuleCreate
   OnDestroy = DataModuleDestroy
   Height = 331
-  HorizontalOffset = 393
-  VerticalOffset = 153
+  HorizontalOffset = 314
+  VerticalOffset = 123
   Width = 954
   object TBL0001Pesquisa: TBufDataset[0]
     FieldDefs = <>
@@ -74,24 +74,33 @@ inherited ModelCase: TModelCase
       ReadOnly = False
       Required = False
     end
-    object TBL0003ESCALA: TLongintField
+    object TBL0003CASAS_DECIMAIS: TLongintField
       FieldKind = fkData
-      FieldName = 'ESCALA'
+      FieldName = 'CASAS_DECIMAIS'
       Index = 3
       LookupCache = False
       ProviderFlags = [pfInUpdate, pfInWhere]
       ReadOnly = False
       Required = False
     end
-    object TBL0003TIPO_CAMPO: TStringField
+    object TBL0003NOME_TIPO_DOMINIO: TStringField
       FieldKind = fkData
-      FieldName = 'TIPO_CAMPO'
+      FieldName = 'NOME_TIPO_DOMINIO'
       Index = 4
       LookupCache = False
       ProviderFlags = [pfInUpdate, pfInWhere]
       ReadOnly = False
       Required = False
       Size = 60
+    end
+    object TBL0003TIPO_DOMINIO: TLongintField
+      FieldKind = fkData
+      FieldName = 'TIPO_DOMINIO'
+      Index = 5
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
     end
   end
   object ZQuery1: TZQuery[2]
@@ -228,15 +237,15 @@ inherited ModelCase: TModelCase
       ReadOnly = False
       Required = False
     end
-    object TBL0002ESCALA: TLongintField
+    object TBL0002CASAS_DECIMAIS: TLongintField
       FieldKind = fkLookup
-      FieldName = 'ESCALA'
+      FieldName = 'CASAS_DECIMAIS'
       Index = 7
       KeyFields = 'ID_TBL0003'
       LookupCache = False
       LookupDataSet = Tbl0003Pesquisa
       LookupKeyFields = 'ID'
-      LookupResultField = 'ESCALA'
+      LookupResultField = 'CASAS_DECIMAIS'
       ProviderFlags = [pfInUpdate, pfInWhere]
       ReadOnly = False
       Required = False
@@ -279,24 +288,23 @@ inherited ModelCase: TModelCase
       ReadOnly = False
       Required = False
     end
-    object Tbl0003PesquisaESCALA: TLongintField
+    object Tbl0003PesquisaCASAS_DECIMAIS: TLongintField
       FieldKind = fkData
-      FieldName = 'ESCALA'
+      FieldName = 'CASAS_DECIMAIS'
       Index = 3
       LookupCache = False
       ProviderFlags = [pfInUpdate, pfInWhere]
       ReadOnly = False
       Required = False
     end
-    object Tbl0003PesquisaTIPO_CAMPO: TStringField
+    object Tbl0003PesquisaTIPO_DOMINIO: TLongintField
       FieldKind = fkData
-      FieldName = 'TIPO_CAMPO'
+      FieldName = 'TIPO_DOMINIO'
       Index = 4
       LookupCache = False
       ProviderFlags = [pfInUpdate, pfInWhere]
       ReadOnly = False
       Required = False
-      Size = 60
     end
   end
 end

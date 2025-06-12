@@ -20,8 +20,6 @@ type
 
   end;
 
-var
-  ModelConexaoFirebird: TModelConexaoFirebird;
 
 implementation
 

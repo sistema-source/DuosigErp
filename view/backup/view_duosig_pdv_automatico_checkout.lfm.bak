@@ -1,0 +1,110 @@
+object ViewDuosigPdvAutomaticoCheckout: TViewDuosigPdvAutomaticoCheckout
+  Left = 384
+  Height = 554
+  Top = 264
+  Width = 1105
+  ClientHeight = 554
+  ClientWidth = 1105
+  Color = clWhite
+  DesignTimePPI = 120
+  LCLVersion = '3.8.0.0'
+  object Panel1: TPanel
+    Left = 0
+    Height = 135
+    Top = 0
+    Width = 1105
+    Align = alTop
+    Caption = 'Panel1'
+    ClientHeight = 135
+    ClientWidth = 1105
+    ParentBackground = False
+    TabOrder = 0
+    object Panel2: TPanel
+      Left = 56
+      Height = 63
+      Top = 48
+      Width = 300
+      Caption = 'Crédito'
+      Color = 11316224
+      Font.CharSet = ANSI_CHARSET
+      Font.Color = clWhite
+      Font.Height = -60
+      Font.Name = 'Segoe UI'
+      Font.Pitch = fpVariable
+      Font.Quality = fqDraft
+      Font.Style = [fsBold]
+      ParentBackground = False
+      ParentColor = False
+      ParentFont = False
+      TabOrder = 0
+    end
+    object Panel3: TPanel
+      Left = 400
+      Height = 63
+      Top = 48
+      Width = 300
+      Caption = 'Débito'
+      Color = 11316224
+      Font.CharSet = ANSI_CHARSET
+      Font.Color = clWhite
+      Font.Height = -60
+      Font.Name = 'Segoe UI'
+      Font.Pitch = fpVariable
+      Font.Quality = fqDraft
+      Font.Style = [fsBold]
+      ParentBackground = False
+      ParentColor = False
+      ParentFont = False
+      TabOrder = 1
+    end
+    object Panel4: TPanel
+      Left = 752
+      Height = 63
+      Top = 48
+      Width = 300
+      Caption = 'Pix'
+      Color = 11316224
+      Font.CharSet = ANSI_CHARSET
+      Font.Color = clWhite
+      Font.Height = -60
+      Font.Name = 'Segoe UI'
+      Font.Pitch = fpVariable
+      Font.Quality = fqDraft
+      Font.Style = [fsBold]
+      ParentBackground = False
+      ParentColor = False
+      ParentFont = False
+      TabOrder = 2
+    end
+    object Shape2: TShape
+      Left = 48
+      Height = 81
+      Top = 40
+      Width = 321
+      Brush.Color = 11316224
+      Pen.Color = 11316224
+      Pen.Width = 5
+      Shape = stRoundRect
+    end
+    object Shape3: TShape
+      Left = 744
+      Height = 81
+      Top = 40
+      Width = 321
+      Brush.Color = 11316224
+      Pen.Color = 11316224
+      Pen.Width = 5
+      Shape = stRoundRect
+    end
+    object Shape1: TShape
+      Left = 392
+      Height = 81
+      Top = 40
+      Width = 321
+      Brush.Color = 11316224
+      Pen.Color = 11316224
+      Pen.Width = 5
+      Shape = stRoundRect
+    end
+  end
+end

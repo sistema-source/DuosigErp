@@ -1,0 +1,8 @@
+object ModelConexaoApi: TModelConexaoApi
+  OnCreate = DataModuleCreate
+  OldCreateOrder = False
+  Height = 150
+  HorizontalOffset = 458
+  VerticalOffset = 145
+  Width = 150
+end

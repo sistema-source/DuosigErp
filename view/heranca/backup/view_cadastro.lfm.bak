@@ -6,8 +6,6 @@ inherited ViewCadastro: TViewCadastro
   Caption = 'Form1'
   ClientHeight = 426
   ClientWidth = 857
-  OnDestroy = FormDestroy
-  OnKeyUp = FormKeyUp
   OnShow = FormShow
   inherited LblTitulo: TLabel
     Height = 21
@@ -21,7 +19,7 @@ inherited ViewCadastro: TViewCadastro
     Height = 405
     Top = 21
     Width = 857
-    PageIndex = 0
+    PageIndex = 1
     Align = alClient
     TabOrder = 0
     object PgPesquisa: TPage

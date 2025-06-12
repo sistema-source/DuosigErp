@@ -28,9 +28,38 @@ object ModelConexao: TModelConexao
   end
   object Conexao: TZConnection
     ControlsCodePage = cCP_UTF8
-    AutoEncodeStrings = True
+    ClientCodepage = 'WIN1252'
+    Properties.Strings = (
+      'codepage=WIN1252'
+    )
+    DisableSavepoints = False
     Port = 0
+    Protocol = 'firebird'
     Left = 48
     Top = 104
+  end
+  object SQLScript1: TSQLScript
+    AutoCommit = False
+    UseDollarString = False
+    Directives.Strings = (
+      'SET TERM'
+      'COMMIT WORK'
+      'COMMIT RETAIN'
+      'COMMIT'
+      '#IFDEF'
+      '#IFNDEF'
+      '#ELSE'
+      '#ENDIF'
+      '#DEFINE'
+      '#UNDEF'
+      '#UNDEFINE'
+    )
+    Terminator = ';'
+    CommentsinSQL = True
+    UseSetTerm = True
+    UseCommit = True
+    UseDefines = True
+    Left = 160
+    Top = 192
   end
 end

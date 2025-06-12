@@ -26,6 +26,12 @@
     </RunParams>
     <RequiredPackages>
       <Item>
+        <PackageName Value="bgracontrols"/>
+      </Item>
+      <Item>
+        <PackageName Value="indylaz"/>
+      </Item>
+      <Item>
         <PackageName Value="rxnew"/>
       </Item>
       <Item>
@@ -118,6 +124,43 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
       </Unit>
+      <Unit>
+        <Filename Value="model\conexao\model_conexao_api.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="ModelConexaoApi"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="DataModule"/>
+      </Unit>
+      <Unit>
+        <Filename Value="vo\vo_dominio.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="model\conexao\model_conexao.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="ModelConexao"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="DataModule"/>
+      </Unit>
+      <Unit>
+        <Filename Value="model\conexao\model_conexao.lfm"/>
+        <IsPartOfProject Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="vo\vo_tabela.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="vo\vo_campo.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="view\view_animacao.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="ViewAnimacao"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit>
     </Units>
   </ProjectOptions>
   <CompilerOptions>
@@ -128,12 +171,14 @@
     </Target>
     <SearchPaths>
       <IncludeFiles Value="$(ProjOutDir)"/>
-      <OtherUnitFiles Value="view\heranca;model;view;model\Heranca;Biblioteca;model\conexao"/>
+      <OtherUnitFiles Value="view\heranca;model;view;model\Heranca;Biblioteca;model\conexao;vo;D:\Componentes\RESTRequest4Delphi\src\;D:\Componentes\dataset-serialize-master\src\;D:\Componentes\dataset-serialize-master\src\core\;D:\Componentes\dataset-serialize-master\src\helpers\;D:\Componentes\dataset-serialize-master\src\providers\;D:\Componentes\dataset-serialize-master\src\singletons\;D:\Componentes\dataset-serialize-master\src\types\"/>
       <UnitOutputDirectory Value="lib\$(TargetCPU)-$(TargetOS)"/>
     </SearchPaths>
     <Linking>
       <Debugging>
         <DebugInfoType Value="dsDwarf3"/>
+        <UseHeaptrc Value="True"/>
+        <TrashVariables Value="True"/>
       </Debugging>
       <Options>
         <Win32>

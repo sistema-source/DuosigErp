@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <PathDelim Value="\"/>
+    <Version Value="12"/>
+    <BuildModes Active="Default"/>
+    <Units>
+      <Unit>
+        <Filename Value="DuosigPDVCliente.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="101" Y="13"/>
+        <UsageCount Value="135"/>
+      </Unit>
+      <Unit>
+        <Filename Value="view\view_duosig_pdv_autotomatico.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="ViewDuosigPdvAutomatico"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="245"/>
+        <CursorPos X="51" Y="272"/>
+        <UsageCount Value="135"/>
+      </Unit>
+      <Unit>
+        <Filename Value="Biblioteca\utils_funcoes.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="36"/>
+        <CursorPos X="75" Y="36"/>
+        <UsageCount Value="98"/>
+      </Unit>
+      <Unit>
+        <Filename Value="model\model_duosig_pdv.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="ModelDuosigPdv"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="DataModule"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="60" Y="48"/>
+        <UsageCount Value="88"/>
+      </Unit>
+      <Unit>
+        <Filename Value="model\conexao\model_conexao.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="ModelConexao"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="DataModule"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="26"/>
+        <CursorPos Y="54"/>
+        <UsageCount Value="84"/>
+      </Unit>
+      <Unit>
+        <Filename Value="model\conexao\model_052.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="Model052"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="DataModule"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="43" Y="34"/>
+        <UsageCount Value="84"/>
+      </Unit>
+      <Unit>
+        <Filename Value="vo\vo_nfe.pas"/>
+        <IsPartOfProject Value="True"/>
+        <TopLine Value="86"/>
+        <CursorPos X="5" Y="130"/>
+        <FoldState Value=" T7DLeT"/>
+        <UsageCount Value="59"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="model\model_nfe.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="ModelNFe"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="DataModule"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="1"/>
+        <TopLine Value="60"/>
+        <CursorPos X="15" Y="77"/>
+        <FoldState Value=" T3oI04J piXjY0(423 pkXog0C2]BPjTlM0B"/>
+        <UsageCount Value="58"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="view\view_duosig_pdv_automatico_checkout.pas"/>
+        <ComponentName Value="ViewDuosigPdvAutomaticoCheckout"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="10" Y="5"/>
+        <UsageCount Value="63"/>
+      </Unit>
+      <Unit>
+        <Filename Value="C:\lazarus\lcl\extctrls.pp"/>
+        <UnitName Value="ExtCtrls"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="14" Y="17"/>
+        <UsageCount Value="10"/>
+      </Unit>
+      <Unit>
+        <Filename Value="model\conexao\configuracao_ini_file.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="30"/>
+        <CursorPos Y="46"/>
+        <UsageCount Value="4"/>
+      </Unit>
+      <Unit>
+        <Filename Value="model\model_nfe.lfm"/>
+        <EditorIndex Value="-1"/>
+        <UsageCount Value="6"/>
+        <DefaultSyntaxHighlighter Value="LFM"/>
+      </Unit>
+      <Unit>
+        <Filename Value="d:\Componentes\ACBR\Fontes\PCNComum\pcnConversao.pas"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="93" Y="23"/>
+        <UsageCount Value="22"/>
+      </Unit>
+      <Unit>
+        <Filename Value="d:\Componentes\ACBR\Fontes\ACBrDFe\ACBrNFe\Base\ACBrNFe.Classes.pas"/>
+        <EditorIndex Value="2"/>
+        <TopLine Value="1123"/>
+        <CursorPos X="53" Y="1144"/>
+        <UsageCount Value="13"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="d:\Componentes\ACBR\Fontes\ACBrDFe\ACBrNFe\PCNNFe\pcnConversaoNFe.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="10"/>
+        <CursorPos X="21" Y="48"/>
+        <UsageCount Value="9"/>
+      </Unit>
+    </Units>
+    <JumpHistory HistoryIndex="29">
+      <Position>
+        <Filename Value="model\model_nfe.pas"/>
+        <Caret Line="1083" Column="26" TopLine="1036"/>
+      </Position>
+      <Position>
+        <Filename Value="model\model_nfe.pas"/>
+        <Caret Line="1081" Column="58" TopLine="1036"/>
+      </Position>
+      <Position>
+        <Filename Value="model\model_nfe.pas"/>
+        <Caret Line="1082" Column="59" TopLine="1062"/>
+      </Position>
+      <Position>
+        <Filename Value="model\model_nfe.pas"/>
+        <Caret Line="1087" Column="63" TopLine="1062"/>
+      </Position>
+      <Position>
+        <Filename Value="model\model_nfe.pas"/>
+        <Caret Line="1097" Column="64" TopLine="1062"/>
+      </Position>
+      <Position>
+        <Filename Value="model\model_nfe.pas"/>
+        <Caret Line="1112" Column="28" TopLine="1082"/>
+      </Position>
+      <Position>
+        <Filename Value="model\model_nfe.pas"/>
+        <Caret Line="74" Column="67" TopLine="36"/>
+      </Position>
+      <Position>
+        <Filename Value="model\model_nfe.pas"/>
+        <Caret Line="1159" Column="5" TopLine="1115"/>
+      </Position>
+      <Position>
+        <Filename Value="model\model_nfe.pas"/>
+        <Caret Line="74" Column="46" TopLine="42"/>
+      </Position>
+      <Position>
+        <Filename Value="model\model_nfe.pas"/>
+        <Caret Line="1125" Column="40" TopLine="1092"/>
+      </Position>
+      <Position>
+        <Filename Value="model\model_nfe.pas"/>
+        <Caret Line="854" Column="42" TopLine="840"/>
+      </Position>
+      <Position>
+        <Filename Value="model\model_nfe.pas"/>
+      </Position>
+      <Position>
+        <Filename Value="model\model_nfe.pas"/>
+        <Caret Line="76" Column="32" TopLine="37"/>
+      </Position>
+      <Position>
+        <Filename Value="model\model_nfe.pas"/>
+        <Caret Line="1162" TopLine="1123"/>
+      </Position>
+      <Position>
+        <Filename Value="model\model_nfe.pas"/>
+        <Caret Line="76" Column="15" TopLine="55"/>
+      </Position>
+      <Position>
+        <Filename Value="model\model_nfe.pas"/>
+      </Position>
+      <Position>
+        <Filename Value="model\model_nfe.pas"/>
+        <Caret Line="73" Column="42" TopLine="37"/>
+      </Position>
+      <Position>
+        <Filename Value="model\model_nfe.pas"/>
+        <Caret Line="677" Column="32" TopLine="640"/>
+      </Position>
+      <Position>
+        <Filename Value="model\model_nfe.pas"/>
+        <Caret Line="855" Column="49" TopLine="783"/>
+      </Position>
+      <Position>
+        <Filename Value="model\model_nfe.pas"/>
+      </Position>
+      <Position>
+        <Filename Value="model\model_nfe.pas"/>
+        <Caret Line="66" Column="43" TopLine="30"/>
+      </Position>
+      <Position>
+        <Filename Value="model\model_nfe.pas"/>
+        <Caret Line="77" Column="38" TopLine="41"/>
+      </Position>
+      <Position>
+        <Filename Value="model\model_nfe.pas"/>
+        <Caret Line="1167" TopLine="1135"/>
+      </Position>
+      <Position>
+        <Filename Value="model\model_nfe.pas"/>
+        <Caret Line="77" Column="41" TopLine="56"/>
+      </Position>
+      <Position>
+        <Filename Value="model\model_nfe.pas"/>
+        <Caret Line="670" Column="33" TopLine="633"/>
+      </Position>
+      <Position>
+        <Filename Value="model\model_nfe.pas"/>
+        <Caret Line="680" Column="31" TopLine="643"/>
+      </Position>
+      <Position>
+        <Filename Value="model\model_nfe.pas"/>
+        <Caret Line="690" Column="49" TopLine="652"/>
+      </Position>
+      <Position>
+        <Filename Value="model\model_nfe.pas"/>
+        <Caret Line="856" Column="46" TopLine="832"/>
+      </Position>
+      <Position>
+        <Filename Value="model\model_nfe.pas"/>
+        <Caret Line="75" Column="18" TopLine="51"/>
+      </Position>
+      <Position>
+        <Filename Value="model\model_nfe.pas"/>
+        <Caret Line="1132" TopLine="1088"/>
+      </Position>
+    </JumpHistory>
+    <RunParams>
+      <FormatVersion Value="2"/>
+      <Modes ActiveMode=""/>
+    </RunParams>
+  </ProjectSession>
+  <Debugging>
+    <BreakPoints>
+      <Item>
+        <Kind Value="bpkSource"/>
+        <WatchScope Value="wpsLocal"/>
+        <WatchKind Value="wpkWrite"/>
+        <Source Value="model\conexao\configuracao_ini_file.pas"/>
+        <Line Value="68"/>
+      </Item>
+      <Item>
+        <Kind Value="bpkSource"/>
+        <WatchScope Value="wpsLocal"/>
+        <WatchKind Value="wpkWrite"/>
+        <Source Value="vo\vo_nfe.pas"/>
+        <Line Value="39"/>
+      </Item>
+    </BreakPoints>
+  </Debugging>
+</CONFIG>

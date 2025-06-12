@@ -26,6 +26,9 @@
     </RunParams>
     <RequiredPackages>
       <Item>
+        <PackageName Value="ACBr_NFe"/>
+      </Item>
+      <Item>
         <PackageName Value="zcomponent"/>
       </Item>
       <Item>
@@ -77,6 +80,16 @@
         <Filename Value="..\vo\vo_menu.pas"/>
         <IsPartOfProject Value="True"/>
       </Unit>
+      <Unit>
+        <Filename Value="..\model\model_nfe.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="ModelNFe"/>
+        <ResourceBaseClass Value="DataModule"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\vo\vo_nfe.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit>
     </Units>
   </ProjectOptions>
   <CompilerOptions>
@@ -87,7 +100,7 @@
     </Target>
     <SearchPaths>
       <IncludeFiles Value="$(ProjOutDir)"/>
-      <OtherUnitFiles Value="D:\ComponentesLAzarus\horse-master\src\;..\model\conexao;D:\ComponentesLAzarus\jhonson-master\src\;rotas;dao\heranca;dao;ValueObject;..\vo"/>
+      <OtherUnitFiles Value="D:\ComponentesLAzarus\horse-master\src\;..\model\conexao;D:\ComponentesLAzarus\jhonson-master\src\;rotas;dao\heranca;dao;ValueObject;..\vo;..\model"/>
       <UnitOutputDirectory Value="lib\$(TargetCPU)-$(TargetOS)"/>
     </SearchPaths>
     <Linking>

@@ -51,12 +51,12 @@ begin
 
   LConfig := TConfiguracaoBanco.Create(LNomeArquivo);
   try
-    ibConexao.HostName := LConfig.EnderecoBancoDados;
-    ibConexao.DatabaseName:=LConfig.NomeBancoDados;
-    ibConexao.UserName:= LConfig.Usuario;
-    ibConexao.Password:= LConfig.Senha;
+    Conexao.HostName := LConfig.EnderecoBancoDados;
+    Conexao.Database:=LConfig.NomeBancoDados;
+    Conexao.User:= LConfig.Usuario;
+    Conexao.Password:= LConfig.Senha;
     Try
-      ibConexao.Connected:= true;
+      Conexao.Connected:= true;
 
     except
       on e : exception do

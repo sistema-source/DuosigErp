@@ -1,0 +1,26 @@
+object ViewAnimacao: TViewAnimacao
+  Left = 818
+  Height = 240
+  Top = 453
+  Width = 320
+  BorderStyle = bsNone
+  Caption = 'ViewAnimacao'
+  ClientHeight = 240
+  ClientWidth = 320
+  Color = 16777173
+  DesignTimePPI = 120
+  Position = poOwnerFormCenter
+  LCLVersion = '3.8.0.0'
+  object Label1: TLabel
+    Left = 57
+    Height = 20
+    Top = 78
+    Width = 44
+    Caption = 'Label1'
+  end
+  object Timer1: TTimer
+    OnTimer = Timer1Timer
+    Left = 8
+    Top = 8
+  end
+end

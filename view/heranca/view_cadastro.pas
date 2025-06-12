@@ -38,8 +38,6 @@ type
     procedure BtnNovoClick(Sender: TObject);
     procedure BtnSalvarClick(Sender: TObject);
     procedure BtnVoltarClick(Sender: TObject);
-    procedure FormDestroy(Sender: TObject);
-    procedure FormKeyUp(Sender: TObject; var Key: word; Shift: TShiftState);
     procedure FormShow(Sender: TObject);
   private
     FEhApagarRegistro: boolean;
@@ -100,16 +98,6 @@ procedure TViewCadastro.BtnVoltarClick(Sender: TObject);
 begin
   NbCadastro.PageIndex := Ord(opPes);
   DBGrdPesquisa.SetFocus;
-end;
-
-procedure TViewCadastro.FormDestroy(Sender: TObject);
-begin
-
-end;
-
-procedure TViewCadastro.FormKeyUp(Sender: TObject; var Key: word; Shift: TShiftState);
-begin
-
 end;
 
 procedure TViewCadastro.FormShow(Sender: TObject);

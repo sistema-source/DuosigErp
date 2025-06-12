@@ -5,7 +5,7 @@ unit utils_funcoes;
 interface
 
 uses
-  Windows, Classes, SysUtils, Graphics, Controls,
+  Windows, Classes, SysUtils, Graphics, Controls, ExtCtrls,
   DB, BufDataset, Process, LResources, md5;
 
 type
@@ -33,6 +33,10 @@ type
     class function OkView: integer;
     class function CloseView: integer;
     class procedure Centralizar(Parent, Child: TWinControl);
+    class procedure CentralizarShape(Parent : TWinControl; Child: TShape);
+    class procedure CentralizarImagem(Parent : TWinControl; Child: TImage);
+
+
     class function SortBufDataSet(DataSet: TBufDataSet;
       const FieldName: string): boolean;
     class function Unscapechars(pValue: string): string;
@@ -183,6 +187,12 @@ begin
 end;
 
 class procedure TUtilFuncoes.Centralizar(Parent, Child: TWinControl);
+begin
+  Child.Left := (Parent.Width - Child.Width) div 2;
+  Child.Top := (Parent.Height - Child.Height) div 2;
+end;
+
+class procedure TUtilFuncoes.CentralizarShape(Parent : TWinControl; Child: TShape);
 begin
   Child.Left := (Parent.Width - Child.Width) div 2;
   Child.Top := (Parent.Height - Child.Height) div 2;
