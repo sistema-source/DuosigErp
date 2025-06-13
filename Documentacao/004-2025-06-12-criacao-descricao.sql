@@ -1,3 +1,5 @@
+Insert into MIGRATIONS(NOME_MIGRATION) values('004-2025-06-12-criacao-descricao.slq');
+
 COMMENT ON TABLE TBL0001 IS 'Grupo de Usuarios';
 COMMENT ON TABLE TBL0002 IS 'SMTP';
 COMMENT ON TABLE TBL0003 IS 'Usuarios';

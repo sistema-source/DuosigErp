@@ -1,8 +1,7 @@
+Insert into MIGRATIONS(NOME_MIGRATION) values('002-2025-06-12-criacao-exceptions.slq');
 SET TERM ^ ;
 
--- EXCEÇÃO: Erro ao gerar o ID do registro
--- Descrição: "Gerasro Id" (Ajustei para "Gerar ID" se for um erro de digitação, caso contrário, mantenho "Gerasro Id" se for intencional)
-CREATE EXCEPTION EX_UID_COLISAO 'Erro ao gerar o ID do registro';
+
 ^
 
 -- EXCEÇÃO: Não pode fazer alteração em registro apagado

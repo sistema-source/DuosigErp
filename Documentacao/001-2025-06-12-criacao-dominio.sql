@@ -1,3 +1,4 @@
+Insert into MIGRATIONS(NOME_MIGRATION) values('001-2025-06-12-criacao-dominio.slq');
 SET TERM ^ ;
 
 -- Domínio para TIMESTAMP
@@ -21,7 +22,7 @@ CREATE DOMAIN D_EMAIL
 
 -- Domínio para IDs (CHAR de 36 caracteres, provavelmente para UUID/GUID)
 CREATE DOMAIN D_ID
-  AS CHAR(36) NOT NULL -- Marcado como NOT NULL na imagem
+  AS CHAR(36)  -- Marcado como NOT NULL na imagem
   CHARACTER SET WIN1252
   COLLATE WIN1252;
 ^
@@ -49,7 +50,7 @@ CREATE DOMAIN D_STA_INT
 ^
 
 -- Domínio para ID de usuário
-CREATE DOMAIN D_USUARIOID
+CREATE DOMAIN D_USUARIO
   AS VARCHAR(30)
   CHARACTER SET WIN1252
   COLLATE WIN1252;
