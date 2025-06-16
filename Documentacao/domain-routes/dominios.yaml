@@ -1,0 +1,85 @@
+paths:
+  /dominios:
+    get:
+      summary: Consulta tabelas por múltiplos critérios
+      description: Retorna tabelas filtrando por NOME, ID.
+      parameters:
+        - name: NOME     (Obs: usando 'NOME=D%' retorna uma lista)
+          in: query
+          required: true
+          schema:
+            type: string
+        - name: ID
+          in: query
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Lista ou unidade de dominios encontrados
+        '400':
+          description: Parâmetros obrigatórios ausentes
+
+
+
+paths:
+  /dominios:
+    post:
+      summary: Cria um novo domínio
+      description: Registra um domínio no sistema.
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required:
+                - ID
+                - Nome_Dominio
+                - User_Create
+                - Tipo_Dominio
+                - Tamanho
+              properties:
+                ID:
+                  type: string
+                  description: Identificador único do domínio
+                Nome_Dominio:
+                  type: string
+                  description: Nome do domínio (sem espaços ou acentos)
+                Dt_Create:
+                  type: string
+                  format: date-time
+                  description: Data de criação
+                User_Create:
+                  type: string
+                  description: Usuário que criou
+                Dt_Update:
+                  type: string
+                  format: date-time
+                User_Update:
+                  type: string
+                Dt_Deleted:
+                  type: string
+                  format: date-time
+                User_Deleted:
+                  type: string
+                Deleted:
+                  type: integer
+                  enum: [0, 1]
+                Ativo:
+                  type: integer
+                  enum: [0, 1]
+                Tipo_Dominio:
+                  type: integer
+                  description: Tipo do domínio (ex: 1 = texto, 2 = número, etc.)
+                Tamanho:
+                  type: integer
+                  description: Tamanho máximo permitido
+                Casa_Decimais:
+                  type: integer
+                  description: Quantidade de casas decimais (caso numérico)
+      responses:
+        '200':
+          description: Domínio criado com sucesso
+        '400':
+          description: Dados inválidos ou campos obrigatórios ausentes

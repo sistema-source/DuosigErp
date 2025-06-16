@@ -1,0 +1,21 @@
+paths:
+  /dominios:
+    get:
+      summary: Consulta tabelas por múltiplos critérios
+      description: Retorna tabelas filtrando por ID, NOME_CAMPO.
+      parameters:
+        - name: ID
+          in: query
+          required: true
+          schema:
+            type: string
+        - name: NOME_CAMPO     
+          in: query
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Lista ou unidade de campos encontrados
+        '400':
+          description: Parâmetros obrigatórios ausentes
