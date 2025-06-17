@@ -28,7 +28,7 @@ paths:
 
 
 paths:
-  /tabelas/:ID:
+  /tabelas/ID:
     post:
       summary: Cria um novo tabela
       description: Registra um novo tabela no sistema
@@ -123,6 +123,65 @@ paths:
       responses:
         '200':
           description: Tabela registrada com sucesso
+        '400':
+          description: Dados inválidos ou campos obrigatórios ausentes
+
+
+
+paths:
+  /tabelas/ID:
+    delete:
+      summary: deletar tabela
+      description: Muda o Status de deleted de 0 para 1
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required:
+                - Id
+                - Nome
+                - User_Create
+                - Cod_Tabela
+              properties:
+                Id:
+                  type: string
+                  description: ID único da tabela mãe
+                Nome:
+                  type: string
+                  description: Nome da tabela
+                Dt_Create:
+                  type: string
+                  format: date-time
+                User_Create:
+                  type: string
+                Dt_Update:
+                  type: string
+                  format: date-time
+                User_Update:
+                  type: string
+                Dt_Deleted:
+                  type: string
+                  format: date-time
+                User_Delete:
+                  type: string
+                Deleted:
+                  type: integer
+                  enum: [0, 1]
+                Ativo:
+                  type: integer
+                  enum: [0, 1]
+                Cod_Tabela:
+                  type: string
+                  description: Código da tabela (chave de identificação)
+                Descricao_Tabela:
+                  type: string
+                ListaCampos:
+                  type: array
+      responses:
+        '200':
+          description: Tabela deletada com sucesso
         '400':
           description: Dados inválidos ou campos obrigatórios ausentes
 

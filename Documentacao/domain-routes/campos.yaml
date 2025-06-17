@@ -1,5 +1,5 @@
 paths:
-  /dominios:
+  /campos:
     get:
       summary: Consulta tabelas por múltiplos critérios
       description: Retorna tabelas filtrando por ID, NOME_CAMPO.
@@ -19,3 +19,140 @@ paths:
           description: Lista ou unidade de campos encontrados
         '400':
           description: Parâmetros obrigatórios ausentes
+
+
+
+paths:
+  /campos/ID:
+    post:
+      summary: Cria um novo campo
+      description: Cria um campo vinculado a uma tabela existente, contendo metadados e configurações padrões.
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required:
+                - ID
+                - ID_Tbl0001
+                - ID_Tbl0003
+                - Nome_Campo
+              properties:
+                ID:
+                  type: string
+                  description: Identificador único do campo
+                DT_Create:
+                  type: string
+                  format: date-time
+                  description: Data de criação do campo
+                User_Create:
+                  type: string
+                  description: Usuário responsável pela criação
+                DT_Update:
+                  type: string
+                  format: date-time
+                User_Update:
+                  type: string
+                DT_Delete:
+                  type: string
+                  format: date-time
+                User_Delete:
+                  type: string
+                Deleted:
+                  type: integer
+                  enum: [0, 1]
+                  description: Flag de exclusão lógica
+                Ativo:
+                  type: integer
+                  enum: [0, 1]
+                  description: Flag de ativação do campo
+                ID_Tbl0001:
+                  type: string
+                  description: ID da tabela mãe (referência)
+                ID_Tbl0003:
+                  type: string
+                  description: Tipo de domínio ou categoria do campo
+                Nome_Campo:
+                  type: string
+                  description: Nome técnico do campo
+                Descricao_Campo:
+                  type: string
+                  description: Descrição legível do campo
+                Valor_Default:
+                  type: number
+                  description: Valor padrão atribuído ao campo
+      responses:
+        '200':
+          description: Campo criado com sucesso
+        '400':
+          description: Dados inválidos ou campos obrigatórios ausentes
+
+
+
+paths:
+  /campos/ID:
+    delete:
+      summary: deleta campo
+      description: Muda o Status de deleted de 0 para 1.
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required:
+                - ID
+                - ID_Tbl0001
+                - ID_Tbl0003
+                - Nome_Campo
+              properties:
+                ID:
+                  type: string
+                  description: Identificador único do campo
+                DT_Create:
+                  type: string
+                  format: date-time
+                  description: Data de criação do campo
+                User_Create:
+                  type: string
+                  description: Usuário responsável pela criação
+                DT_Update:
+                  type: string
+                  format: date-time
+                User_Update:
+                  type: string
+                DT_Delete:
+                  type: string
+                  format: date-time
+                User_Delete:
+                  type: string
+                Deleted:
+                  type: integer
+                  enum: [0, 1]
+                  description: Flag de exclusão lógica
+                Ativo:
+                  type: integer
+                  enum: [0, 1]
+                  description: Flag de ativação do campo
+                ID_Tbl0001:
+                  type: string
+                  description: ID da tabela mãe (referência)
+                ID_Tbl0003:
+                  type: string
+                  description: Tipo de domínio ou categoria do campo
+                Nome_Campo:
+                  type: string
+                  description: Nome técnico do campo
+                Descricao_Campo:
+                  type: string
+                  description: Descrição legível do campo
+                Valor_Default:
+                  type: number
+                  description: Valor padrão atribuído ao campo
+      responses:
+        '200':
+          description: Campo deletado com sucesso
+        '400':
+          description: Dados inválidos ou campos obrigatórios ausentes
+
